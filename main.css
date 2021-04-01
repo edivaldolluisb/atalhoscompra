@@ -108,7 +108,7 @@ input[type = submit]{
 	border-radius: 5px;
 	border-color:  rgb(51, 214, 255);
 }
-@media screen and (max-width:640px ) {
+@media screen and (max-width:700px ) {
 	.cttinfo{
 		display: none;
 	}
