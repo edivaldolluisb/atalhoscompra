@@ -24,6 +24,11 @@
 	text-align: center;
 }
 
+.banner-text{
+	background-color: rgba(59, 59, 59, 0.4);
+	margin: auto;
+}
+
 .banner-text h1{
 	text-align: center;
 	width: 100%;
@@ -44,6 +49,9 @@
 	font-size: 2vh;
 	padding: 15px;
 	text-align: center;
+	margin: auto;
+	width: 100%;
+	
 }
 @media screen and (max-width:565px) {
 	.banner-text h1{
