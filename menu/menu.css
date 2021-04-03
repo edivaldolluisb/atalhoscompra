@@ -104,6 +104,7 @@ nav {
 
 .nav-active {
         transform: translateX(0%);
+        z-index: 1;/*por causa do conflito entre camadas*/
 }
 
 @keyframes navLinkFade {
