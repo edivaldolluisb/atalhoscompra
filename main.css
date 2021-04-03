@@ -67,9 +67,10 @@
 @media screen and (max-width:510px) {
 	.banner-text h1{
 		font-size: 3vh;
+		
 	}
 	.banner-text h2{
-		font-size: 1.5vh;
+		font-size: 2vh;
 	}
 	.banner-text{
 		width: 85%;
