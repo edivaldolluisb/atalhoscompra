@@ -1,0 +1,36 @@
+#categorias h1, #produtos h1{
+    font-size: 16px;
+}
+#categorias h2{
+    font-size: 12px;
+}
+#categorias{
+    position: relative;
+    display: block;
+    margin: 5% auto 3% auto;
+    text-align: center;
+    
+}
+.prod img {
+    width: 100%;
+}
+#produtos h1{
+    margin-left: 10px;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+.prod{
+    width: 30%;
+    background-color: aliceblue;
+    margin: 1% auto;
+    text-align: center;
+
+}
+#blur.active{
+    filter: blur(20px);
+}
