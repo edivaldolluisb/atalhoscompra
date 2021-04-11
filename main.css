@@ -94,10 +94,11 @@
 
 
 /*rodapé*/
+
 #rodape{
 	background-image: linear-gradient( 120deg, rgb(255, 255, 255), rgba(59, 59, 59, 0.4));
 	padding: 02%;
-	
+
 }
 #ctticons{
 	margin-top: 2%;
@@ -132,6 +133,15 @@ input[type = submit]{
 	border-radius: 5px;
 	border-color:  rgb(51, 214, 255);
 }
+@media screen and (max-width:355px) {
+	input[type = email]{
+		width: 75%;	
+	}
+	input[type = submit]{
+		width: 20%;
+	}
+	
+}
 @media screen and (max-width:700px ) {
 	.cttinfo{
 		display: none;
@@ -140,7 +150,12 @@ input[type = submit]{
 
 #stp_and_copy {
 	margin-top: 05rem;
-	font-size: 3vmin;
+	font-size: 3vmin;	
+}
+@media screen and (min-width: 470px) {
+	#stp_and_copy {
+		font-size: 2vmin;	
+	}
 	
 }
 /*rodapé*/
