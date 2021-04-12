@@ -76,12 +76,6 @@
 		width: 85%;
 	}
 	
-	.slide_de_texto{
-		top: 10%;
-		width: 90%;
-	}
-	
-	
 	
 }
 @keyframes ani1{
@@ -105,10 +99,17 @@
 .slide_de_texto{
 	display: block;
 	position: relative;
-	top: 20%;
+	top: 18%;
 	width: 70%;
 	margin: 0 auto;
 
+}
+@media screen and (max-width:510px) {
+	.slide_de_texto{
+		width: 85%;
+		
+		height: 50vh;
+	}
 }
 
 /* Slideshow container */
@@ -122,7 +123,7 @@
   /* Slides */
   .mySlides {
 	display: none;
-	padding: 80px;
+	padding: 60px;
 	text-align: center;
   }
   
