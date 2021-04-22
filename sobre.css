@@ -1,11 +1,49 @@
+
 /*nav de compras*/
 #carinho_perfil{
-    width: 2%;
-    transition: width 2s;
+    width: 12%;
     display: flex;
     justify-content: space-between;
 }
-#carinho_perfil:hover{
-    width: 10%;
+@media screen and (max-width:1094px) {
+    #carinho_perfil{
+        width: 20%;
+    }
 }
+@media screen and (max-width:650px) {
+    #carinho_perfil{
+        width: 35%;
+    }
+}
+/*fim da nav de compras*/
 
+/*main*/
+/*secção sobre*/
+#sobre1{
+    padding: 1%;
+}
+#sobre1 img{
+    width: 40%;
+    float: left;
+}
+.sobre_loja{
+    width: 55%;
+    float: right;
+    margin: 0% 1% 1% 1%;
+    text-align: justify;
+}
+@media screen and (max-width:768px) {
+    #sobre1 img{
+        width: 98%;
+        margin: 2%;
+    }
+    .sobre_loja{
+        width: 98%;
+        margin: 2%;
+    }
+}
+/*secção nossa equipa*/
+#sobre_nossa_equipa{
+    
+}
+/*fim do main*/
