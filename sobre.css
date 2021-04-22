@@ -1,0 +1,11 @@
+/*nav de compras*/
+#carinho_perfil{
+    width: 2%;
+    transition: width 2s;
+    display: flex;
+    justify-content: space-between;
+}
+#carinho_perfil:hover{
+    width: 10%;
+}
+
