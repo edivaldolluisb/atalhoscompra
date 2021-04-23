@@ -77,8 +77,8 @@ nav {
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 84vh;
+        top: 16vh;
         background-color: rgba(77, 38, 0, 0.6);
         display: flex;
         flex-direction: column;
@@ -138,6 +138,21 @@ nav {
 
 
 
-
+/*estilos da nav bar de carrinhos e de perfil*/
+#carinho_perfil{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1094px) {
+    #carinho_perfil{
+        width: 20%;
+    }
+}
+@media screen and (max-width:650px) {
+    #carinho_perfil{
+        width: 35%;
+    }
+}
 
 

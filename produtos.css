@@ -101,4 +101,21 @@ input[type="number"]{
     }
     
 }
+/*nav do carrinho e do perfil*/
+#carinho_perfil{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1094px) {
+    #carinho_perfil{
+        width: 20%;
+    }
+}
+@media screen and (max-width:650px) {
+    #carinho_perfil{
+        width: 35%;
+    }
+}
+/*fim da nav de compras*/
 

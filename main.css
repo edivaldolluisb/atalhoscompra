@@ -30,13 +30,13 @@
 
 /*banner text center*/
 .banner-text{
-	background-color: rgba(59, 59, 59, 0.4);
+	background-color: rgba(59, 59, 59, 0.6);
 }
 
 .banner-text h1, .banner-text h2{
 	margin: auto;
 	width: 100%;
-	color: black;
+	color: white;
 	text-align: center;
 }
 .banner-text h1{
