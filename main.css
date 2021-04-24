@@ -203,6 +203,7 @@
 	background-image: linear-gradient( 120deg, rgba(77, 38, 0, 0.5), rgba(59, 59, 59, 0.4));
 	padding: 2%;
 	clear: both;
+	position: relative;
 }
 #ctticons{
 	margin-top: 2%;
