@@ -67,8 +67,9 @@
 
 /*Efeito paralax*/
 .parallax {
+    width: 100%;
     /* A imagem usada */
-    background-image: url("./imagens/máquina2.jpg");
+    background-image: url("./imagens/imagens_de_sobre/imagem_de_pico.jpg");
   
     /* Selecione um tamanho especifico */
     min-height: 500px; 
