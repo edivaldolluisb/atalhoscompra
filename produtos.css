@@ -51,7 +51,7 @@
 #detalhes{
     width: 100%;
     height: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 40%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +103,7 @@ input[type="number"]{
 }
 /*nav do carrinho e do perfil*/
 #carinho_perfil{
-    width: 12%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -117,5 +117,22 @@ input[type="number"]{
         width: 35%;
     }
 }
+
 /*fim da nav de compras*/
+
+/*input de pesquisa*/
+.search_bar{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+.search_bar input[type=text], button{
+    padding: 1%;
+
+}
+@media screen and (min-width:700px) {
+    .search_bar input{
+        width: 50%;
+    }
+}
 
