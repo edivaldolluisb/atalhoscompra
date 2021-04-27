@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./menu/menu.css">
     <link rel="stylesheet" href="./galeria.css">
+    <link rel="stylesheet" href="./entrar.css">
+    <link rel="stylesheet" href="./reg.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;1,150;1,300&family=Poppins:wght@200&display=swap"
@@ -44,11 +46,11 @@
                 <li class="menu-hover">
                     <a href='./sobre.html'>Sobre Nós</a>
                 </li>
-                <li class="menu-hover">
+                <li class="menu-hover" onclick="openEntrar()">
                     <a href='#'>Entrar</a>
                 </li>
-                <li class="menu-hover">
-                    <a href='#'>Registar</a>
+                <li class="menu-hover" onclick="openReg()">
+                    <a href='#'>Registrar</a>
                 </li>
             </ul>
             <div class="burger">
@@ -76,171 +78,278 @@
     <!--main-->
     <main>
 
-    
-    <section id="galeria">
-        <div class="gallery" id="gallery">
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(1).jpg" alt="fotos de São Tomé e Príncipe"></div>
+
+        <section id="galeria">
+            <div class="gallery" id="gallery">
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(1).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(2).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(3).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(4).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(5).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(6).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(7).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(8).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(9).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(10).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(11).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(12).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(13).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(14).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(15).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(16).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(17).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/infante-d-henrique.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/jogo-da-lata.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/o-fim-da-estrada.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/postcard-beach.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/pr-do-sol-bom-bom.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/so-pedro.jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(18).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(19).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(20).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(21).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(22).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(23).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(24).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(25).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(26).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(27).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(28).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(29).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(30).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(31).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(32).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(33).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(34).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(35).jpg"
+                            alt="fotos de São Tomé e Príncipe"></div>
+                </div>
+
+
             </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(2).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(3).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(4).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(5).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(6).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(7).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(8).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(9).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(10).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(11).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(12).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(13).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(14).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(15).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(16).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(17).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/infante-d-henrique.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/jogo-da-lata.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/o-fim-da-estrada.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/postcard-beach.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/pr-do-sol-bom-bom.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/so-pedro.jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(18).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(19).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(20).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-             <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(21).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-             <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(22).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(23).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(24).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(25).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(26).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(27).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(28).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(29).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(30).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(31).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(32).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-             <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(33).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(34).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            <div class="gallery-item">
-                <div class="content"><img src="./imagens/imagens_da_galeria/imagem_(35).jpg" alt="fotos de São Tomé e Príncipe"></div>
-            </div>
-            
-            
-        </div>
     </main>
 
     </section>
     <!--/ main-->
 
-        <!--footer-->
-        <footer id="rodape">
-            <h3>Entre em contacto conosco:</h3>
-            <div id="ctticons">
-                <a href="mailto:info.atalhocompras@gmail.com"><img src="./imagens/icones/gmail.png" alt="email"
-                        width="40px"> <span class="cttinfo">info.atalhocompras@gmail.com</span></a>
-                <a href="https://api.whatsapp.com/send?phone=+2399838301" target="_blank"><img
-                        src="./imagens/icones/whatsapp.png" alt="whatsapp" width="40px"><span class="cttinfo">+239 9838301</span></a>
-                <a href="tel:+239 9806659"><img src="./imagens/icones/icons8-phone-40.png" alt="telefone"><span
-                        class="cttinfo">+239 9838301</span></a>
+
+
+    <!--outras seções-->
+
+    <!--Entrar-->
+    <!--Entrar-->
+    <section id="Entrar" class="overlay" style=" width: 100%;">
+        <button class="closebtn" onclick="closeEntrar()" id="fechar_over">&times;</button>
+
+        <div class="overlay-content">
+            <div class="conteudo">
+
+                <form action="#">
+                    <fieldset>
+                        <legend>Entrar</legend>
+                        <input type="tel" name="numero_tel" class="borda_botton" id="" placeholder="Número de telefone"
+                            min="0">
+                        <input type="password" name="palavra_passe" class="borda_botton" id=""
+                            placeholder="Digite a palvra passe">
+                        <input type="submit" value="Entrar" class="input_registro input_registrar">
+                    </fieldset>
+
+                </form><br>
+                <p><a href="">Perdeu a senha?</a></p>
             </div>
-            <div id="sendmail">
-                <form action="#" method="post">
-                    <label for="form_email" style="margin-bottom: 03%;">Receba as novidades no seu e-mail</label>
-                    <input type="email" name="form_email" id="form_email" placeholder="Digite o seu e-mail">
-                    <input type="submit" value="Enviar">
-                </form>
+        </div>
+    </section>
+    <!--/ Entrar-->
+    <!--Registrar-->
+
+    <div id="Registrar_Tela" class="overlay">
+        <button class="closebtn" onclick="closeReg()" id="fechar_over">&times;</button>
+        <div class="overlay-content">
+            <div class="conteudo">
+
+                <form action="#">
+                    <fieldset>
+                        <legend>Registrar</legend>
+                        <input type="text" name="Primeiro_nome" class="input_registro borda_botton all" id=""
+                            placeholder="Primeiro Nome">
+                        <input type="text" name="Último_nome" class="input_registro borda_botton all" id=""
+                            placeholder="Último Nome">
+                        <input type="tel" name="numero_tel" class="input_registro borda_botton" id=""
+                            placeholder="Número de telefone" min="0">
+                        <input type="email" name="Email" class="input_registro borda_botton all" id=""
+                            placeholder="Digite seu Email">
+                        <input type="text" name="Sua_Morada" class="input_registro borda_botton all" id=""
+                            placeholder="Sua Morada">
+                        <input type="password" name="palavra_passe" class="input_registro borda_botton" id=""
+                            placeholder="Digite a palvra passe">
+                        <input type="submit" value="Registrar" class="input_registro input_registrar">
+                    </fieldset>
+
+                </form><br>
             </div>
-            <div id="stp_and_copy">
-                <address>São Tomé, República Democratica de São Tomé e Príncipe</address>
-                <p style="text-align: center;">Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script> Powered by Startup Atalho Developers
-                </p>
-            </div>
-    
-        </footer>
-        <!--footer-->
- 
+        </div>
+    </div>
+
+    <!--/ Registrar-->
+
+
+
+
+
+    <!--footer-->
+    <footer id="rodape">
+        <h3>Entre em contacto conosco:</h3>
+        <div id="ctticons">
+            <a href="mailto:info.atalhocompras@gmail.com"><img src="./imagens/icones/gmail.png" alt="email"
+                    width="40px"> <span class="cttinfo">info.atalhocompras@gmail.com</span></a>
+            <a href="https://api.whatsapp.com/send?phone=+2399838301" target="_blank"><img
+                    src="./imagens/icones/whatsapp.png" alt="whatsapp" width="40px"><span class="cttinfo">+239
+                    9838301</span></a>
+            <a href="tel:+239 9806659"><img src="./imagens/icones/icons8-phone-40.png" alt="telefone"><span
+                    class="cttinfo">+239 9838301</span></a>
+        </div>
+        <div id="sendmail">
+            <form action="#" method="post">
+                <label for="form_email" style="margin-bottom: 03%;">Receba as novidades no seu e-mail</label>
+                <input type="email" name="form_email" id="form_email" placeholder="Digite o seu e-mail">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div id="stp_and_copy">
+            <address>São Tomé, República Democratica de São Tomé e Príncipe</address>
+            <p style="text-align: center;">Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> Powered by Startup Atalho Developers
+            </p>
+        </div>
+
+    </footer>
+    <!--footer-->
+
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/galeria.js"></script>
+    <script src="./js/entrar_reg.js"></script>
     <!--/ Importing Scripts-->
 
 </body>

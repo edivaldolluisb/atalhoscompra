@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./sobre.css">
     <link rel="stylesheet" href="./menu/menu.css">
+    <link rel="stylesheet" href="./entrar.css">
+    <link rel="stylesheet" href="./reg.css">
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,11 +45,11 @@
                 <li class="menu-hover">
                     <a href='./sobre.html'>Sobre Nós</a>
                 </li>
-                <li class="menu-hover">
+                <li class="menu-hover" onclick="openEntrar()">
                     <a href='#'>Entrar</a>
                 </li>
-                <li class="menu-hover">
-                    <a href='#'>Registar</a>
+                <li class="menu-hover" onclick="openReg()">
+                    <a href='#'>Registrar</a>
                 </li>
             </ul>
             <div class="burger">
@@ -79,14 +81,14 @@
                 boa qualidade nomeadamente das seguintes categorias cosméticos, acessórios e alimentares, e um
                 serviço de entrega personalizado.
                 Formas de pagamento: Cash, transferência bancária e paypal.</p><br>
-                <p>Nota: Por questões de logísticas atualmente as vendas ainda estão limitadas para o território
-                    nacional são-tomense.</p>
+            <p>Nota: Por questões de logísticas atualmente as vendas ainda estão limitadas para o território
+                nacional são-tomense.</p>
 
         </section>
         <div class="parallax"></div>
         <h2 style="text-align: center; margin: 3% auto;">Nós</h2>
         <section id="sobre_nossa_equipa">
-            
+
             <div class="nome">
                 <img src="./imagens/imagens_de_sobre/avatar.jpg" alt="">
                 <h3>Patrício Gomes</h3>
@@ -115,6 +117,74 @@
 
         </section>
     </main>
+
+
+
+
+
+    <!--outras seções-->
+
+    <!--Entrar-->
+    <!--Entrar-->
+    <section id="Entrar" class="overlay" style=" width: 100%;">
+        <button class="closebtn" onclick="closeEntrar()" id="fechar_over">&times;</button>
+
+        <div class="overlay-content">
+            <div class="conteudo">
+
+                <form action="#">
+                    <fieldset>
+                        <legend>Entrar</legend>
+                        <input type="tel" name="numero_tel" class="borda_botton" id="" placeholder="Número de telefone"
+                            min="0">
+                        <input type="password" name="palavra_passe" class="borda_botton" id=""
+                            placeholder="Digite a palvra passe">
+                        <input type="submit" value="Entrar" class="input_registro input_registrar">
+                    </fieldset>
+
+                </form><br>
+                <p><a href="">Perdeu a senha?</a></p>
+            </div>
+        </div>
+    </section>
+    <!--/ Entrar-->
+    <!--Registrar-->
+
+    <div id="Registrar_Tela" class="overlay">
+        <button class="closebtn" onclick="closeReg()" id="fechar_over">&times;</button>
+        <div class="overlay-content">
+            <div class="conteudo .tamnh">
+
+                <form action="#">
+                    <fieldset>
+                        <legend>Registrar</legend>
+                        <input type="text" name="Primeiro_nome" class="input_registro borda_botton all" id=""
+                            placeholder="Primeiro Nome">
+                        <input type="text" name="Último_nome" class="input_registro borda_botton all" id=""
+                            placeholder="Último Nome">
+                        <input type="tel" name="numero_tel" class="input_registro borda_botton" id=""
+                            placeholder="Número de telefone" min="0">
+                        <input type="email" name="Email" class="input_registro borda_botton all" id=""
+                            placeholder="Digite seu Email">
+                        <input type="text" name="Sua_Morada" class="input_registro borda_botton all" id=""
+                            placeholder="Sua Morada">
+                        <input type="password" name="palavra_passe" class="input_registro borda_botton" id=""
+                            placeholder="Digite a palvra passe">
+                        <input type="submit" value="Registrar" class="input_registro input_registrar">
+                    </fieldset>
+
+                </form><br>
+            </div>
+        </div>
+    </div>
+
+    <!--/ Registrar-->
+
+
+
+
+
+
 
     <!--footer-->
     <footer id="rodape">
@@ -146,6 +216,7 @@
     <!--footer-->
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
+    <script src="./js/entrar_reg.js"></script>
     <!--Importing Scripts-->
 
 </body>

@@ -225,7 +225,7 @@ a{
 #sendmail{
 	margin: 02%;
 }
-input[type = email]{
+#form_email{
 	margin: 3px auto;
 	border-style: solid;
 	padding: 5px;

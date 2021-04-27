@@ -126,7 +126,7 @@ input[type="number"]{
     padding: 2%;
     text-align: center;
 }
-.search_bar input[type=text], button{
+.search_bar input[type=search], button{
     padding: 1%;
 
 }
