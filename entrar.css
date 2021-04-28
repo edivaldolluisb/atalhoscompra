@@ -5,7 +5,7 @@
 	background-size: cover;
 	background-position: center ;
 }
-#fechar_over{
+.fechar_over{
     background-color: rgb(116, 183, 204);
     border-radius: 6px;
     cursor: pointer;
