@@ -1,0 +1,57 @@
+#carinho_compras{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    
+}
+#carinho_fechar{
+    background-color: rgb(149, 200, 216); 
+    border-style: none; 
+    float: right; 
+    position: relative;
+    cursor: pointer;
+    margin: 1%;
+    border-radius: 4px;
+    
+}
+.div_compras{
+    position: relative;
+    margin-top: 020%;
+    width: 100%;
+    padding: 01%;
+    
+
+}
+.div_compras img{
+    width: 30%;
+}
+.carinho_produto{
+    display: flex;
+    
+}
+.intem_produto{
+    margin-top: 05%;
+}
+.intem_produto button{
+    border-style: none;
+    padding: 2%;
+    background-color: rgb(149, 200, 216);
+    width: 40%;
+    margin: auto;
+    
+}
+.compra_produto_detalhes{
+    width: 100%;
+}
+#quantidade_de_produto{
+    width: 30%;
+}
+
+

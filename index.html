@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./menu/menu.css">
     <link rel="stylesheet" href="./entrar.css">
     <link rel="stylesheet" href="./reg.css">
-    
+    <link rel="stylesheet" href="./css/carinho_de_compras.css">
+
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -63,9 +64,8 @@
         <!--nav bar de carinho e perfil -->
         <nav>
             <div id="carinho_perfil">
-                <a href="#">
-                    <img src="./imagens/icones/icons8-scarlet-shopping-basket-40.png"
-                        alt="Carinho de compras">
+                <a href="#" onclick="carinho_on()">
+                    <img src="./imagens/icones/icons8-scarlet-shopping-basket-40.png" alt="Carinho de compras">
                 </a>
                 <a href="#">
                     <img src="./imagens/icones/icons8-customer-40.png" alt="Perfil">
@@ -119,8 +119,67 @@
     <!--Main Content-->
 
     <!--outras seções-->
+    <!--Carrinho de Compras-->
+    <section id="carinho_compras">
+        <button id="carinho_fechar" onclick="carinho_off()"><img
+                src="https://img.icons8.com/ios-filled/50/000000/multiply.png" /></button>
 
-    <!--Entrar-->
+
+        <div class="div_compras">
+            <h1 style="position: relative; width: 100%; text-align: center;">Os seus Produtos</h1>
+            <div class="intem_produto">
+                <div class="carinho_produto">
+                    <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                    <div class="compra_produto_detalhes">
+                        <p>Produto</p>
+                        <p>40 <b>STN</b></p>
+                        <input type="number" name="quantidade_de_produto" min="0" id="quantidade_de_produto">
+                    </div>
+                </div>
+                <div style="text-align: center;"><button>remover</button></div>
+            </div>
+        </div>
+        <div class="div_compras">
+            <div class="intem_produto">
+                <div class="carinho_produto">
+                    <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                    <div class="compra_produto_detalhes">
+                        <p>Produto</p>
+                        <p>40 <b>STN</b></p>
+                        <input type="number" name="quantidade_de_produto" min="0" id="quantidade_de_produto">
+                    </div>
+                </div>
+                <div style="text-align: center;"><button>remover</button></div>
+            </div>
+        </div>
+        <div class="div_compras">
+            <div class="intem_produto">
+                <div class="carinho_produto">
+                    <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                    <div class="compra_produto_detalhes">
+                        <p>Produto</p>
+                        <p>40 <b>STN</b></p>
+                        <input type="number" name="quantidade_de_produto" min="0" id="quantidade_de_produto">
+                    </div>
+                </div>
+                <div style="text-align: center;"><button>remover</button></div>
+            </div>
+        </div>
+        <div class="div_compras">
+            <div class="intem_produto">
+                <div class="carinho_produto">
+                    <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                    <div class="compra_produto_detalhes">
+                        <p>Produto</p>
+                        <p>40 <b>STN</b></p>
+                        <input type="number" name="quantidade_de_produto" min="0" id="quantidade_de_produto">
+                    </div>
+                </div>
+                <div style="text-align: center;"><button>remover</button></div>
+            </div>
+        </div>
+    </section>
+
     <!--Entrar-->
     <section id="Entrar" class="overlay" style=" width: 100%;">
         <button class="closebtn fechar_over" onclick="closeEntrar()">&times;</button>
@@ -139,7 +198,8 @@
                     </fieldset>
 
                 </form><br>
-                <p><a href="#">Perdeu a senha?</a></p> <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
+                <p><a href="#">Perdeu a senha?</a></p>
+                <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
             </div>
         </div>
     </section>
@@ -210,6 +270,7 @@
     <script src="menu/menu.js"></script>
     <script src="./js/slide_de_imagem.js"></script>
     <script src="./js/entrar_reg.js"></script>
+    <script src="./js/carrinho.js"></script>
     <!--Importing Scripts-->
 </body>
 
