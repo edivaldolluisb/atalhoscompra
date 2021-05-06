@@ -51,7 +51,7 @@
 .compra_produto_detalhes{
     width: 100%;
 }
-#quantidade_de_produto{
+.quantidade_de_produto{
     width: 30%;
 }
 #preco_total{
