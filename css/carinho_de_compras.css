@@ -1,3 +1,4 @@
+
 #carinho_compras{
     position: absolute;
     display: none;
@@ -23,7 +24,7 @@
 }
 .div_compras{
     position: relative;
-    margin-top: 020%;
+    
     width: 100%;
     padding: 01%;
     
@@ -43,7 +44,7 @@
     border-style: none;
     padding: 2%;
     background-color: rgb(149, 200, 216);
-    width: 40%;
+    width: 30%;
     margin: auto;
     
 }
@@ -53,5 +54,47 @@
 #quantidade_de_produto{
     width: 30%;
 }
+#preco_total{
+    text-align: center;
+    margin-top: 1em;
+}
+#Finalizar{
+    padding: 0.5rem;
+    border-style: none;
+    background-color: rgb(67, 139, 161);
+    color: white;
+    margin: auto;
+}
+#finalizar_compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+@media screen and (min-width:950px) {
+    #carinho_compras{
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .div_compras{
+        height: 64vh;
+        overflow-y: scroll;
+        background-color: rgba(215, 250, 231, 0.459);
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .intem_produto button{
+        width: 20%;
+    }
+}
+
+.remover_do_cesto{
+    border-radius: 5px;
+}
 

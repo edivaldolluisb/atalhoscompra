@@ -1,6 +1,6 @@
 #Entrar{
   display: none;
-    background-image: url(./imagens/background2.jpg);
+  background-image: url(./imagens/background2.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center ;
@@ -51,7 +51,7 @@ input[type=tel], input[type=password], .input_registrar, .all {
   .input_registro  {   
       margin-bottom: 4% auto;
     }
-    .conteudo{
+  .conteudo{
         width: 80%;
     }
 }
@@ -60,11 +60,7 @@ input[type=tel], input[type=password], .input_registrar, .all {
   box-sizing: border-box;
   border-bottom: 3px solid rgb(91, 153, 182);
 }
-.input_registrar{
-  border-style: none;
-  background-color: rgba(0, 162, 255, 0.76);
-  cursor: pointer;
-}
+
 form{
   width: 100%;
 }
