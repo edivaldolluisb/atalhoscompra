@@ -87,17 +87,17 @@
         overflow-y: auto;
         background-color: rgba(215, 250, 231, 0.459);
 
-        /*bara de rolagem da divcompras*/
+        
 
-    }        
+    }/*bara de rolagem da divcompras*/        
     .div_compras::-webkit-scrollbar{
             width: 8px;
         }
-    ::-webkit-scrollbar-thumb{
+    .div_compras::-webkit-scrollbar-thumb{
         background: rgba(51, 168, 123, 0.473);
     }
     ::-webkit-scrollbar-thumb{
-        border-radius: 4px;
+        border-radius: 2px;
     }
     
 }

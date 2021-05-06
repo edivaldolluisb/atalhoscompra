@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./menu/menu.css">
-    <link rel="stylesheet" href="./produtos.css">
-    <link rel="stylesheet" href="./entrar.css">
-    <link rel="stylesheet" href="./reg.css">
+    <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/entrar.css">
+    <link rel="stylesheet" href="./css/reg.css">
+    <link rel="stylesheet" href="./css/carinho_de_compras.css">
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,6 +55,9 @@
                 <li class="menu-hover" onclick="openReg()">
                     <a href='#'>Registrar</a>
                 </li>
+                <li>
+                    <a href="#">Sair</a>
+                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -68,7 +72,7 @@
                 <a href="#" onclick="carinho_on()">
                     <img src="./imagens/icones/icons8-buying-40.png" alt="Carinho de compras">
                 </a>
-                <a href="#">
+                <a href="./perfil.html">
                     <img src="./imagens/icones/icons8-male-user-40.png" alt="Perfil">
                 </a>
             </div>
@@ -142,9 +146,42 @@
 
 
 
-    <!--outras seções - Entrar e registrar-->
+    <!--outras seções carinho de compras, Entrar e registrar-->
 
-    <!--Entrar-->
+    <!--outras seções-->
+    <!--Carrinho de Compras-->
+    <section id="carinho_compras">
+        <button id="carinho_fechar" onclick="carinho_off()"><img
+                src="https://img.icons8.com/ios-filled/50/000000/multiply.png" /></button>
+
+
+        <div class="div_compras" style="margin-top: 020%;">
+            <h1 style="position: relative; width: 100%; text-align: center;">Os seus Produtos</h1>
+            <form action="">
+                <div class="intem_produto">
+                    <div class="carinho_produto">
+                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                        <div class="compra_produto_detalhes">
+                            <p>Produto</p>
+                            <p>40 <b>STN</b></p>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto" style="border-style: none;">
+                        </div>
+                    </div>
+                    <div style="text-align: center;"><button class="remover_do_cesto" style="cursor: pointer;">remover</button></div>
+                </div>
+
+
+            </form>
+
+        </div>
+        <p id="preco_total">Preço total: <b>160</b> STN</p>
+        <div id="finalizar_compra">
+            <button id="Finalizar" type="submit" style="margin-top: 2%;">Finalizar</button>
+        </div>
+
+
+    </section>
+
     <!--Entrar-->
     <section id="Entrar" class="overlay" style=" width: 100%;">
         <button class="closebtn fechar_over" onclick="closeEntrar()">&times;</button>
@@ -159,15 +196,17 @@
                             placeholder="Número de telefone">
                         <input type="password" name="palavra_passe" class="borda_botton" id="Entrar_passe"
                             placeholder="Digite a palvra passe">
-                        <input type="submit" name="Entrar_log" value="Entrar" class="input_registro input_registrar">
+                        <input type="submit" name="Entrar_log" value="Entrar" class="input_registro input_registrar"
+                            id="entrar_login">
                     </fieldset>
 
                 </form><br>
-                <p><a href="#">Perdeu a senha?</a></p> <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
+                <p><a href="#">Perdeu a senha?</a></p>
+                <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
             </div>
         </div>
     </section>
-    <!--/ Entrar-->
+
     <!--Registrar-->
 
     <div id="Registrar_Tela" class="overlay">
@@ -190,7 +229,8 @@
                             id="registro_morada" placeholder="Sua Morada">
                         <input type="password" name="palavra_passe" class="input_registro borda_botton"
                             id="registro_palavra_passe" placeholder="Digite a palavra passe">
-                        <input type="submit" value="Registrar" class="input_registro input_registrar">
+                        <input type="submit" value="Registrar" class="input_registro input_registrar"
+                            id="enviar_form_registro">
                     </fieldset>
 
                 </form><br>
@@ -199,6 +239,9 @@
     </div>
 
     <!--/ Registrar-->
+
+
+
 
 
 
@@ -237,6 +280,7 @@
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/entrar_reg.js"></script>
+    <script src="./js/carrinho.js"></script>
     <!--Importing Scripts-->
 
 </body>

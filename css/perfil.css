@@ -1,0 +1,45 @@
+h2{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+input{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(0, 162, 255, 0.76);    
+    padding: 2.5%;
+    position: relative;
+    margin: 3% auto;
+    width: 80%;
+}
+input:focus{
+    outline: none;
+}
+fieldset{
+    margin:1%;
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    color: white;
+    margin: 5% auto;
+    padding: 0.5em;
+    border-style: none;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 3px;
+}
+button[type=submit]{
+    display: none;
+}

@@ -69,7 +69,7 @@
 .parallax {
     
     /* A imagem usada */
-    background-image: url("./imagens/arte2.jpg");
+    background-image: url("../imagens/arte2.jpg");
   
     /* Selecione um tamanho especifico */
     min-height: 500px; 
