@@ -1,6 +1,6 @@
 #Entrar{
   display: none;
-  background-image: url(./imagens/background2.jpg);
+  background-image: url(../imagens/background2.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center ;
