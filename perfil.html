@@ -34,7 +34,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Santo Compras</h1>
+                <h1><a href="./index.html">Santo Compras </a></h1>
             </div>
             <ul class="nav-links">
                 <li class="menu-hover">
@@ -66,7 +66,7 @@
         <nav>
             <div id="carinho_perfil">
                 <a href="#" onclick="carinho_on()">
-                    <img src="./imagens/icones/icons8-buying-40.png" alt="Carinho de compras">
+                    <img src="./imagens/icones/icons8-buying-40.png"  alt="Carinho de compras">
                 </a>
                 <a href="#">
                     <img src="./imagens/icones/icons8-male-user-40.png" alt="Perfil">
@@ -78,31 +78,37 @@
 
     <!--main-->
     <main>
-        <h2>Seu Perfil</h2>
+        <h2>Seus Dados</h2>
         <div>
             <form action="" method="post">
                 <fieldset>
                     <input type="text" id="nome" name="Primeiro_nome" class=" borda_botton all" value="Jorge" readonly>
 
-                    <input type="text" id="ultimo_nome" name="ultimo_nome" class=" borda_botton all" value="Medeiros" readonly>
-
-                    <input type="tel" id="telefone" name="numero_tel" class=" borda_botton all" value="9900009" readonly>
-
-                    <input type="email" id="email" name="Email" class=" borda_botton all" value="Jorgemedeiros@mail.com" readonly>
-
-                    <input type="text" id="morada" name="Sua_Morada" class="borda_botton all" value="Rua da caixa" readonly>
-
-                    <input type="password" id="palavrapasse" name="palavra_passe" class=" borda_botton all" value="Palavra passe"
+                    <input type="text" id="ultimo_nome" name="ultimo_nome" class=" borda_botton all" value="Medeiros"
                         readonly>
+
+                    <input type="tel" id="telefone" name="numero_tel" class=" borda_botton all" value="9900009"
+                        readonly>
+
+                    <input type="email" id="email" name="Email" class=" borda_botton all" value="Jorgemedeiros@mail.com"
+                        readonly>
+
+                    <input type="text" id="morada" name="Sua_Morada" class="borda_botton all" value="Rua da caixa"
+                        readonly>
+
+                    <input type="password" id="palavrapasse" name="palavra_passe" class=" borda_botton all"
+                        value="Palavra passe" readonly>
                 </fieldset>
                 <div>
-                    <button  type="button" id="editar_perfil">Editar</button><Button type="submit" id="concluir_edit">Concluir</Button>
+                    <button type="button" id="editar_perfil">Editar</button>
+                    <button type="button" id="cancelar_edit">Cancelar edição</button>
+
+                    <Button type="submit" id="concluir_edit">Concluir edição</Button>
                 </div>
 
             </form>
         </div>
     </main>
-
 
     <script src="menu/menu.js"></script>
     <script src="./js/perfil.js"></script>

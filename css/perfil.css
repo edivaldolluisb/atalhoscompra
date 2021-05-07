@@ -1,11 +1,23 @@
-h2{
+#carinho_perfil{
+    display: none;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+*{
     font-family: "Poppins", sans-serif;
+}
+h2{
     text-align: center;
     margin-bottom: 1em;
+    margin-top: 1rem;
 }
 
 input{
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     border: none;
     box-sizing: border-box;
@@ -40,6 +52,28 @@ button{
     background-color: rgba(88, 170, 218, 0.733);
     border-radius: 3px;
 }
-button[type=submit]{
+button[type=submit], #cancelar_edit{
     display: none;
+}
+
+@media screen and (min-width:900px) {
+    input{
+        font-size: large;
+        display: block;
+        width: 30%;
+        text-align: center;
+        transition: width 1s;
+    }
+    fieldset{
+        display: block;
+        
+    }
+    input:hover{
+        width: 50%;
+
+    }
+    button{
+        font-size: medium;
+    }
+    
 }
