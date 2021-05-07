@@ -54,6 +54,7 @@
 .quantidade_de_produto{
     width: 15%;
     font-weight: bold;
+    padding-left: 3px;
 }
 #preco_total{
     text-align: center;
