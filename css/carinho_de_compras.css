@@ -85,7 +85,7 @@
     .div_compras{
         height: 64vh;
         overflow-y: auto;
-        background-color: rgba(215, 250, 231, 0.459);
+        background-color: rgba(255, 255, 255, 0.459);
 
         
 
@@ -94,7 +94,7 @@
             width: 8px;
         }
     .div_compras::-webkit-scrollbar-thumb{
-        background: rgba(51, 168, 123, 0.473);
+        background: rgba(27, 27, 27, 0.8);
     }
     ::-webkit-scrollbar-thumb{
         border-radius: 2px;
