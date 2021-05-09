@@ -200,7 +200,7 @@
 /*rodapé*/
 
 #rodape{
-	background-image: linear-gradient( 120deg, rgba(77, 38, 0, 0.5), rgba(59, 59, 59, 0.4));
+	background-color: white;
 	padding: 2%;
 	clear: both;
 	position: relative;
@@ -210,10 +210,7 @@
  	display: flex;
 	padding: 3%;
 }
-#ctticons:hover{
-	background-image:linear-gradient(120deg, rgba(59, 59, 59, 0.4), rgba(77, 38, 0, 0.6));
-	
-}
+
 #ctticons a{
 	margin: auto;
 }
@@ -237,7 +234,7 @@ input[type = submit]{
 	border-style: solid;
 	padding: 5px;
 	border-radius: 5px;
-	border-color:  rgb(51, 214, 255);
+	border-style: none;
 }
 @media screen and (max-width:355px) {
 	input[type = email]{
@@ -255,12 +252,12 @@ input[type = submit]{
 }
 
 #stp_and_copy {
-	margin-top: 05rem;
-	font-size: 3vmin;	
+	margin-top: 02rem;
+	font-size: 2vmin;	
 }
 @media screen and (min-width: 470px) {
 	#stp_and_copy {
-		font-size: 2vmin;	
+		font-size: 0.8em;	
 	}
 	
 }
