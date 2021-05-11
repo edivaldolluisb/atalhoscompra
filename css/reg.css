@@ -1,10 +1,6 @@
 #Registrar_Tela{
-    background-image: url(../imagens/background2.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center ;
+    display: block;
 }
-
 @media screen and (min-width:900px) {
     .conteudo{
         width: 28%;
@@ -12,25 +8,24 @@
 }
 .overlay {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    /*background-image: linear-gradient(120deg, rgb(172, 115, 57), rgba(0, 128, 0, 0.5), rgb(0, 138, 230));*/
+    /*background-color: rgb(0,0,0);*/
+    background-color: rgba(0,0,0, 0.5);
     overflow-x: hidden;
     transition: 0.5s;
 }
 
-.overlay-content {
+/*.overlay-content {
     position: relative;
-    top: 25%;
+    top: 10%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
+}*/
 
 .overlay .closebtn {
     position: absolute;
@@ -61,4 +56,7 @@
     }#entrar_login{
         width: 60%;
     }
+}
+#entrar_login, #enviar_form_registro{
+    margin-top: 10%;
 }
