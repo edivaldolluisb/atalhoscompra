@@ -134,6 +134,7 @@
         <div class="div_compras" style="margin-top: 020%;">
             <h1 style="position: relative; width: 100%; text-align: center;">Os seus Produtos</h1>
             <form action="">
+                <!--Cada intem no carinho-->
                 <div class="intem_produto">
                     <div class="carinho_produto">
                         <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
@@ -141,13 +142,20 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
-                                value="1"><br><br>
+                            <div class="div_quantidade">
+                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
+                                </button>
+                                <input type="number" class="input-QT" value="1" min="1"
+                                    style="width: 20px; border-style: none; text-align: center;">
+                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
+                                </button>
+                            </div>
+                            <br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
-
                 </div>
+                <!--Cada intem no carinho-->
                 <div class="intem_produto">
                     <div class="carinho_produto">
                         <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
@@ -155,14 +163,61 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
-                                value="1"><br><br>
+                            <div class="div_quantidade">
+                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
+                                </button>
+                                <input type="number" class="input-QT" value="1" min="1"
+                                    style="width: 20px; border-style: none; text-align: center;">
+                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
+                                </button>
+                            </div>
+                            <br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
-
                 </div>
-
+                <!--Cada intem no carinho-->
+                <div class="intem_produto">
+                    <div class="carinho_produto">
+                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                        <div class="compra_produto_detalhes">
+                            <p>Produto</p>
+                            <p>40 <b>STN</b></p>
+                            <br>
+                            <div class="div_quantidade">
+                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
+                                </button>
+                                <input type="number" class="input-QT" value="1" min="1"
+                                    style="width: 20px; border-style: none; text-align: center;">
+                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
+                                </button>
+                            </div>
+                            <br>
+                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Cada intem no carinho-->
+                <div class="intem_produto">
+                    <div class="carinho_produto">
+                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                        <div class="compra_produto_detalhes">
+                            <p>Produto</p>
+                            <p>40 <b>STN</b></p>
+                            <br>
+                            <div class="div_quantidade">
+                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
+                                </button>
+                                <input type="number" class="input-QT" value="1" min="1"
+                                    style="width: 20px; border-style: none; text-align: center;">
+                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
+                                </button>
+                            </div>
+                            <br>
+                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
+                        </div>
+                    </div>
+                </div>
 
             </form>
 
@@ -230,7 +285,7 @@
                         <input type="password" name="palavra_passe" class="input_registro borda_botton"
                             id="registro_palavra_passe" placeholder="Digite a palavra passe">
                         <input type="password" name="palavra_passe" class="input_registro borda_botton"
-                            id="registro_palavra_passe" placeholder="Confirme a palavra passe">
+                            id="confirmar_palavra_passe" placeholder="Confirme a palavra passe">
                         <input type="submit" value="Registrar" class="input_registro input_registrar"
                             id="enviar_form_registro">
                     </fieldset>
