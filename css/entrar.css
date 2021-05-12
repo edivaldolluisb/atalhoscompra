@@ -81,9 +81,10 @@ form{
 
 .overlay-content {
   position: relative;
-  top: 10%;
+  top: 5%;
   width: 100%;
   text-align: center;
+  max-height: 95%;
   /*margin-top: 10px;*/
 }
 
