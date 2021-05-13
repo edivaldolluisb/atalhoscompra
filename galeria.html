@@ -311,15 +311,21 @@
 
     </section>
 
+
     <!--Entrar-->
     <section id="Entrar" class="overlay" style=" width: 100%;">
-        <button class="closebtn fechar_over" onclick="closeEntrar()">&times;</button>
+
 
         <div class="overlay-content">
             <div class="conteudo">
+                <button class="fechar_over" onclick="closeEntrar()"><img
+                        src="https://img.icons8.com/ios-filled/50/000000/multiply.png" /></button>
+                <!--<button class="closebtn fechar_over" >x</button>-->
 
                 <form action="#">
+
                     <fieldset>
+
                         <legend>Entrar</legend>
                         <input type="tel" name="numero_tel" class="borda_botton" id="Entrar_telefone"
                             placeholder="Número de telefone">
@@ -329,7 +335,9 @@
                             id="entrar_login">
                     </fieldset>
 
-                </form><br>
+                </form>
+                <span id="error">Palavra passe ou nome errado</span>
+                <br>
                 <p><a href="#">Perdeu a senha?</a></p>
                 <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
             </div>
@@ -338,10 +346,12 @@
 
     <!--Registrar-->
 
-    <div id="Registrar_Tela" class="overlay">
-        <button class="closebtn fechar_over" onclick="closeReg()">&times;</button>
+    <div id="Registrar_Tela" class="overlay" style="display: block;">
+        <!--<button class="closebtn fechar_over" onclick="closeReg()">&times;</button>-->
         <div class="overlay-content">
             <div class="conteudo">
+                <button class="fechar_over" onclick="closeReg()"><img
+                        src="https://img.icons8.com/ios-filled/50/000000/multiply.png" /></button>
 
                 <form action="#">
                     <fieldset>
@@ -354,10 +364,26 @@
                             placeholder="Número de telefone">
                         <input type="email" name="Email" class="input_registro borda_botton all" id="registro_email"
                             placeholder="Digite seu Email">
+                        <!--Seleção de distrito-->
+
+
+                        <select name="distritos" id="distritos" style="width: 100%;">
+                            <optgroup>
+                                <option value="Água-Grande">Água-Grande</option>
+                                <option value="Lembá">Lembá</option>
+                                <option value="Caué">Caué</option>
+                                <option value="Lobata">Lobata</option>
+                                <option value="Mé-Zóchi">Mé-Zóchi</option>
+                                <option value="Pagué">Pagué</option>
+                                <option value="Cantagalo">Cantagalo</option>
+                            </optgroup>
+                        </select>
                         <input type="text" name="Sua_Morada" class="input_registro borda_botton all"
                             id="registro_morada" placeholder="Sua Morada">
                         <input type="password" name="palavra_passe" class="input_registro borda_botton"
                             id="registro_palavra_passe" placeholder="Digite a palavra passe">
+                        <input type="password" name="palavra_passe" class="input_registro borda_botton"
+                            id="confirmar_palavra_passe" placeholder="Confirme a palavra passe">
                         <input type="submit" value="Registrar" class="input_registro input_registrar"
                             id="enviar_form_registro">
                     </fieldset>
