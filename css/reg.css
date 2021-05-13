@@ -60,3 +60,10 @@
 #entrar_login, #enviar_form_registro{
     margin-top: 10%;
 }
+
+/*select distritos*/
+#distritos{
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(91, 153, 182);
+}

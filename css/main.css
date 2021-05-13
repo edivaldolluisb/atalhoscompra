@@ -272,3 +272,10 @@ body::-webkit-scrollbar-thumb{
 	background: rgba(27, 27, 27, 0.8);
 }
 
+/*mensagem de erro*/
+
+#error{
+	font-size: 010pt;
+	color: red;
+	
+}

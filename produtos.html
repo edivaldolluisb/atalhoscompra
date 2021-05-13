@@ -135,9 +135,16 @@
                 <p>Óleo de coco</p>
                 <p id="preco">0.00nDbs</p>
                 <form action="#">
-                    <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade">
+                    <div class="div_quantidade">
+                        <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
+                        </button>
+                        <input type="number" class="input-QT" value="1" min="0"
+                            style="width: 20px; border-style: none; text-align: center;">
+                        <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
+                        </button>
+                    </div>
                 </form>
-                <button type="submit" id="comprar_btn">Comprar</button>
+                <button type="submit" id="comprar_btn"><a href="#produtos">Adicionar ao carinho</a></button>
             </div>
         </section>
 
@@ -166,15 +173,8 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <div class="div_quantidade">
-                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
-                                </button>
-                                <input type="number" class="input-QT" value="1" min="1"
-                                    style="width: 20px; border-style: none; text-align: center;">
-                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
-                                </button>
-                            </div>
-                            <br>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto" style="text-align: center;" value="1">
+                            <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>

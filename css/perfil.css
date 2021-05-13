@@ -85,3 +85,8 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
 	background: rgba(27, 27, 27, 0.8);
 }
+
+#nota{
+    text-align: center;
+    margin-bottom: 10em;
+}

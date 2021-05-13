@@ -74,7 +74,7 @@
     margin: 3% 35%;
     padding: 5px;
     color: black;
-    background-color: rgb(164, 208, 209);
+    background-color: rgb(149, 200, 216);
     border-radius: 5px;
 }
 input[type="number"]{
@@ -86,7 +86,7 @@ input[type="number"]{
     padding: 1.5%;
     border-radius: 5px;
     border-style: none;
-    background-color: rgb(133, 224, 224);
+    background-color: rgb(149, 200, 216);
     cursor: pointer;
 }
 
@@ -134,5 +134,10 @@ input[type="number"]{
     .search_bar input{
         width: 50%;
     }
+}
+.aumentar, .diminuir{
+    background-color: rgb(149, 200, 216);
+    border-style: none;
+    border-radius: 3px;
 }
 

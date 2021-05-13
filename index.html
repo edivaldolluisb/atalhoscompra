@@ -142,15 +142,9 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <div class="div_quantidade">
-                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
-                                </button>
-                                <input type="number" class="input-QT" value="1" min="1"
-                                    style="width: 20px; border-style: none; text-align: center;">
-                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
-                                </button>
-                            </div>
-                            <br>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
+                            <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
@@ -163,15 +157,9 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <div class="div_quantidade">
-                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
-                                </button>
-                                <input type="number" class="input-QT" value="1" min="1"
-                                    style="width: 20px; border-style: none; text-align: center;">
-                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
-                                </button>
-                            </div>
-                            <br>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
+                            <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
@@ -184,15 +172,9 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <div class="div_quantidade">
-                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
-                                </button>
-                                <input type="number" class="input-QT" value="1" min="1"
-                                    style="width: 20px; border-style: none; text-align: center;">
-                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
-                                </button>
-                            </div>
-                            <br>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
+                            <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
@@ -205,15 +187,24 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <div class="div_quantidade">
-                                <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
-                                </button>
-                                <input type="number" class="input-QT" value="1" min="1"
-                                    style="width: 20px; border-style: none; text-align: center;">
-                                <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
-                                </button>
-                            </div>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
+                            <br><br>
+                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Cada intem no carinho-->
+                <div class="intem_produto">
+                    <div class="carinho_produto">
+                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
+                        <div class="compra_produto_detalhes">
+                            <p>Produto</p>
+                            <p>40 <b>STN</b></p>
                             <br>
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
+                            <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
@@ -253,7 +244,9 @@
                             id="entrar_login">
                     </fieldset>
 
-                </form><br>
+                </form>
+                <span id="error">Palavra passe ou nome errado</span>
+                <br>
                 <p><a href="#">Perdeu a senha?</a></p>
                 <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
             </div>
@@ -280,6 +273,20 @@
                             placeholder="Número de telefone">
                         <input type="email" name="Email" class="input_registro borda_botton all" id="registro_email"
                             placeholder="Digite seu Email">
+                        <!--Seleção de distrito-->
+
+
+                        <select name="distritos" id="distritos" style="width: 100%;">
+                            <optgroup>
+                                <option value="Água-Grande">Água-Grande</option>
+                                <option value="Lembá">Lembá</option>
+                                <option value="Caué">Caué</option>
+                                <option value="Lobata">Lobata</option>
+                                <option value="Mé-Zóchi">Mé-Zóchi</option>
+                                <option value="Pagué">Pagué</option>
+                                <option value="Cantagalo">Cantagalo</option>
+                            </optgroup>
+                        </select>
                         <input type="text" name="Sua_Morada" class="input_registro borda_botton all"
                             id="registro_morada" placeholder="Sua Morada">
                         <input type="password" name="palavra_passe" class="input_registro borda_botton"
