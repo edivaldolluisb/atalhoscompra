@@ -88,6 +88,16 @@ form{
   overflow-y: auto;
   /*margin-top: 10px;*/
 }
+/*bara de rolagem da divcompras*/        
+.overlay-content::-webkit-scrollbar{
+  width: 8px;
+}
+.overlay-content::-webkit-scrollbar-thumb{
+background: rgba(27, 27, 27, 0.8);
+}
+::-webkit-scrollbar-thumb{
+border-radius: 2px;
+}
 
 
 .overlay .closebtn {
