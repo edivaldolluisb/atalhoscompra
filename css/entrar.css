@@ -85,6 +85,7 @@ form{
   width: 100%;
   text-align: center;
   max-height: 95%;
+  overflow-y: auto;
   /*margin-top: 10px;*/
 }
 
