@@ -141,3 +141,26 @@ input[type="number"]{
     border-radius: 3px;
 }
 
+/*Adicionar ao carrinho*/
+
+.add_shopcart{
+    display: flex;
+    flex-direction: column;    
+    margin: auto ;
+    align-items: center;
+}
+.add_shopcart button, span{
+    width: 50%;
+}
+#add_sucesso{
+    display: none;
+    color: #008000;
+    
+}
+#continuar_compra{
+    display: none;
+    border-style: none;
+    background-color: rgb(149, 200, 216);
+    border-radius: 5px;
+    margin-top: 1rem;
+}

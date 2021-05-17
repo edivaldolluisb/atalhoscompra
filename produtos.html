@@ -24,7 +24,7 @@
     <link rel="icon" href="./shopping-bag.svg" />
 
 
-    <title>Santo Compras</title>
+    <title>Santo Coisas</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Santo Compras</h1>
+                <h1>Santo Coisas</h1>
             </div>
             <ul class="nav-links">
                 <li class="menu-hover">
@@ -134,7 +134,7 @@
                 <h1>Cosméticos</h1>
                 <p>Óleo de coco</p>
                 <p id="preco">0.00nDbs</p>
-                <form action="#">
+                <form action="#" method="POST">
                     <div class="div_quantidade">
                         <button type="button" class="diminuir" style="width: 10%;"><b>-</b>
                         </button>
@@ -143,9 +143,14 @@
                         <button type="button" class="aumentar" style="width: 10%;"><b>+</b>
                         </button>
                     </div>
-                    <button type="submit" id="comprar_btn"><a href="#produtos">Adicionar ao carinho</a></button>
+                    <div class="add_shopcart">
+                        <button type="button" id="comprar_btn">Adicionar ao carinho</button>
+                        <span id="add_sucesso">adicionado com sucesso</span>
+                        <button type="button" id="continuar_compra"><a href="#produtos"> Continuar a compra </a></button>
+                    </div>
+
                 </form>
-                
+
             </div>
         </section>
 
@@ -174,7 +179,8 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto" style="text-align: center;" value="1">
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
                             <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
@@ -315,7 +321,7 @@
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/entrar_reg.js"></script>
-    <script src="./js/carrinho.js"></script>
+    <script src="./js/produtos.js"></script>
     <!--Importing Scripts-->
 
 </body>
