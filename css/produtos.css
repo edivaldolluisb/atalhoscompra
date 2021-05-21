@@ -149,7 +149,7 @@ input[type="number"]{
     margin: auto ;
     align-items: center;
 }
-.add_shopcart button, span{
+.add_shopcart button, #add_sucesso{
     width: 50%;
 }
 #add_sucesso{
