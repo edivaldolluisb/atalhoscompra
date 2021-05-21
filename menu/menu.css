@@ -156,3 +156,15 @@ nav {
 }
 
 
+/*quantidade de item no carrinho*/
+
+#quantidade_item{
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    border-radius: 10px;
+    padding: 3px 4px 1px;
+    text-align: center;
+    min-width: 8px;
+    line-height: 1;
+}
