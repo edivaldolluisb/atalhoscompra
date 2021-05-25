@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/entrar_registrar.css">
-    <link rel="stylesheet" href="./css/main.css">
+
     <link rel="stylesheet" href="./menu/menu.css">
 
     <link
@@ -78,28 +78,34 @@
 
         <form action="#">
 
-            <fieldset>
+            <fieldset class="field_registro">
 
-                <legend>Entrar</legend>
-                <input type="tel" name="numero_tel" class="borda_botton" id="Entrar_telefone"
-                    placeholder="Número de telefone" >
+                <legend>Registrar</legend>
 
-                <input type="password" name="palavra_passe" class="borda_botton" id="Entrar_passe"
-                    placeholder="Digite a palvra passe" >
 
                 <input type="text" name="Primeiro_nome" class="borda_botton" id="registro_primeiro_nome"
-                    placeholder="Primeiro Nome" >
+                    placeholder="Primeiro Nome">
 
                 <input type="text" name="ultimo_nome" class="borda_botton" id="registro_ultimo_nome"
-                    placeholder="Último Nome" >
-
+                    placeholder="Último Nome">
                 <input type="tel" name="numero_tel" class="borda_botton" id="registro_telefone"
-                    placeholder="Número de telefone" >
-
+                    placeholder="Número de telefone">
                 <input type="email" name="Email" class="borda_botton" id="registro_email"
-                    placeholder="Digite seu Email" >
+                    placeholder="Digite seu Email">
+                <input type="text" name="Sua_Morada" class="borda_botton" id="registro_morada" placeholder="Sua Morada">
+                <input type="text" name="Seu_Distrito" class="borda_botton" id="registro_distrito"
+                    placeholder="Seu Distrito">
+                <input type="password" name="palavra_passe" class="borda_botton" id="registro_palavra_passe"
+                    placeholder="Digite a palavra passe">
+                <input type="password" name="c_palavra_passe" class="borda_botton" id="registro_c_palavra_passe"
+                    placeholder="Confirme a palavra passe">
+                <div>
+                    <input type="submit" value="Registrar" class="input_registrar" id="enviar_form_registro">
+                </div>
 
-              
+
+
+
             </fieldset>
 
         </form>

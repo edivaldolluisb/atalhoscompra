@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5%;
+    margin: 5% auto 10% auto;
 } 
 fieldset{   
     border-style: none;
@@ -45,6 +45,10 @@ input[type=tel], input[type=password], .input_registrar, input[type=text], input
 input:focus{
     outline: none;
 }
+input{
+    font-weight: bold;
+}
+
 
 /*Entrar*/
 
@@ -64,3 +68,13 @@ p a{
     box-sizing: border-box;
     border-bottom: 3px solid rgb(91, 153, 182);
 }
+@media  screen and (min-width:250px) {
+    .field_registro{
+        width:60%;
+        margin: auto;
+    }
+
+}
+
+    
+   
