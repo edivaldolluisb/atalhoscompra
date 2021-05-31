@@ -17,7 +17,7 @@ h2{
     margin-top: 1rem;
 }
 
-input{
+input, select{
     font-weight: bold;
     border: none;
     box-sizing: border-box;
@@ -57,7 +57,7 @@ button[type=submit], #cancelar_edit{
 }
 
 @media screen and (min-width:900px) {
-    input{
+    input, select{
         font-size: large;
         display: block;
         width: 30%;

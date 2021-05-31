@@ -83,12 +83,15 @@
                     placeholder="Número de telefone">
                 <input type="password" name="palavra_passe" class="borda_botton" id="Entrar_passe"
                     placeholder="Digite a palvra passe">
+                <div style="text-align: center; width:100%;">
+                    <span id="error" >Palavra passe ou nome errado</span>
+                </div>
+
                 <input type="submit" name="Entrar_log" value="Entrar" class="input_registro input_registrar"
                     id="entrar_login">
             </fieldset>
 
         </form>
-        <span id="error">Palavra passe ou nome errado</span>
         <br>
         <p><a href="#">Perdeu a senha?</a></p>
         <p onclick="openReg()" style="cursor: pointer;">Criar Conta</p>
