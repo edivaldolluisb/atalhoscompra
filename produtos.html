@@ -55,9 +55,6 @@
                 <li class="menu-hover" onclick="openReg()">
                     <a href='./registrar.html'>Registrar</a>
                 </li>
-                <li>
-                    <a href="#">Sair</a>
-                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -81,6 +78,17 @@
 
     </header>
     <!--end of mn-->
+    <!--Pop up-->
+    <div class="popup_perfil">
+        <p>jorge medeiros</p>
+        <p id="user_email">Jorgemedeiros@gmail.com</p>
+        <div>
+            <a href=".//perfil.html">Gerenciar Conta</a>
+        </div>
+        <button type="button" id="logout_sair">Sair</button>
+    </div>
+
+
     <div class="search_bar">
         <form action="#">
             <input type="search" placeholder="Procure..." name="search">
@@ -147,7 +155,8 @@
                     <div class="add_shopcart">
                         <button type="button" id="comprar_btn">Adicionar ao carinho</button>
                         <span id="add_sucesso">adicionado com sucesso</span>
-                        <button type="button" id="continuar_compra"><a href="#produtos"> Continuar a compra </a></button>
+                        <button type="button" id="continuar_compra"><a href="#produtos"> Continuar a compra
+                            </a></button>
                     </div>
 
                 </form>

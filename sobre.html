@@ -52,9 +52,6 @@
                 <li class="menu-hover" onclick="openReg()">
                     <a href='./registrar.html'>Registrar</a>
                 </li>
-                <li>
-                    <a href="#">Sair</a>
-                </li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -76,6 +73,16 @@
     </header>
     <!--end of mn-->
 
+    <!--Pop up-->
+    <div class="popup_perfil">
+        <p>jorge medeiros</p>
+        <p id="user_email">Jorgemedeiros@gmail.com</p>
+        <div>
+            <a href=".//perfil.html">Gerenciar Conta</a>
+        </div>
+        <button type="button" id="logout_sair">Sair</button>
+    </div>
+
     <main>
         <img src="./imagens/imagens_de_sobre/15046736170_dba7c5d803_k.jpg" width="100%" alt="">
         <section id="sobre1">
@@ -85,7 +92,7 @@
                 boa qualidade nomeadamente das seguintes categorias cosméticos, acessórios e alimentares, e um
                 serviço de entrega personalizado.
                 Formas de pagamento: Cash, transferência bancária e paypal.</p><br>
-            <p><b>Nota:</b>  Por questões de logística atualmente as vendas ainda estão limitadas para o território
+            <p><b>Nota:</b> Por questões de logística atualmente as vendas ainda estão limitadas para o território
                 nacional são-tomense.</p>
 
         </section>
@@ -145,7 +152,8 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto" style="text-align: center;" value="1">
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                style="text-align: center;" value="1">
                             <br><br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
@@ -158,11 +166,12 @@
                             <p>Produto</p>
                             <p>40 <b>STN</b></p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto" value="1"><br><br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>       
+                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
+                                value="1"><br><br>
+                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
-                    
+
                 </div>
 
 

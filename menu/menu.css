@@ -169,3 +169,58 @@ nav {
     line-height: 1;
     
 }
+
+
+
+/*pop up perfil*/
+
+.popup_perfil{
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 16vh;
+    left: 55%;
+    right: 5%;
+    background-color: rgb(138, 115, 92);
+    padding-top: 1em;
+    height: 25vh;
+    font-size: 10pt;
+    z-index: 1;
+    
+}
+.popup_perfil p{
+    width: 100%;
+    text-align: center;
+    font-size: 12pt;
+}
+#user_email{
+    font-size: 10pt;
+}
+
+.popup_perfil a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup_perfil div{
+    
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+#logout_sair{
+    width:20%;
+
+    color: white;
+    margin: 5% auto auto auto;
+    padding: 0.5em;
+    border-style: none;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 3px;
+}
