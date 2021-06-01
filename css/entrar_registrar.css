@@ -14,6 +14,10 @@
 } 
 fieldset{   
     border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 legend {
@@ -25,10 +29,10 @@ legend {
     margin: 5% auto;
 } 
 
-input[type=tel], input[type=password], .input_registrar, input[type=text], input[type=email] {
+input[type=tel], input[type=password], .input_registrar, input[type=text], input[type=email], select {
     padding: 2.5%;
     margin: 5% auto;
-    width: 100%;
+    width: 85%;
     border-radius: 3px;
   
 }
@@ -42,10 +46,10 @@ input[type=tel], input[type=password], .input_registrar, input[type=text], input
     background-color: rgba(0, 162, 255, 0.76);
     cursor: pointer;
 }
-input:focus{
+input, select:focus{
     outline: none;
 }
-input{
+input, select, option{
     font-weight: bold;
 }
 
@@ -68,13 +72,7 @@ p a{
     box-sizing: border-box;
     border-bottom: 3px solid rgb(91, 153, 182);
 }
-@media  screen and (min-width:250px) {
-    .field_registro{
-        width:60%;
-        margin: auto;
-    }
 
-}
 
     
    
