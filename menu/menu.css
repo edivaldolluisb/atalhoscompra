@@ -170,26 +170,39 @@ nav {
     
 }
 
+/*nav do carrinho e do perfil*/
+#carinho_perfil{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 /*pop up perfil*/
 
 .popup_perfil{
     color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    display: none;
     position: absolute;
     top: 16vh;
-    left: 55%;
-    right: 5%;
+    right: 10%;
     background-color: rgb(138, 115, 92);
     padding-top: 1em;
     height: 25vh;
     font-size: 10pt;
     z-index: 1;
-    
+    width: 280px;
+}
+@media screen and (max-width:340px) {
+    .popup_perfil{
+        width: 250px;
+        right: 5%;
+    }
+}
+.popup_dispaly{ /*será ativada apenas ao clique*/
+    display: block;
 }
 .popup_perfil p{
     width: 100%;
@@ -216,7 +229,7 @@ nav {
 }
 #logout_sair{
     width:20%;
-
+    margin: auto;
     color: white;
     margin: 5% auto auto auto;
     padding: 0.5em;
