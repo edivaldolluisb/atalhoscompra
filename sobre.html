@@ -66,7 +66,7 @@
                     <img src="./imagens/icones/icons8-buying-40.png" alt="Carinho de compras">
                 </a>
                 <a href="#">
-                    <img src="./imagens/icones/icons8-male-user-40.png" id="perfil_usuário" alt="Perfil" >
+                    <img src="./imagens/icones/icons8-male-user-40.png" id="perfil_usuário" alt="Perfil">
                 </a>
             </div>
         </nav>
@@ -151,30 +151,40 @@
                     <div class="carinho_produto">
                         <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
                         <div class="compra_produto_detalhes">
-                            <p>Produto</p>
-                            <p>40 <b>STN</b></p>
+                            <p><b>Produto</b></p>
+                            <p class="price">17.99 STN</p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
-                                style="text-align: center;" value="1">
-                            <br><br>
+                            <span class="qt-minus">-</span>
+                            <span class="qt">3</span>
+                            <span class="qt-plus">+</span>
+                            <br>
+                            <p><b>preço total:</b></p>
+                            <p class="full-price"></p>
+                            <br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
                 </div>
+                <!--Cada intem no carinho-->
                 <div class="intem_produto">
                     <div class="carinho_produto">
                         <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
                         <div class="compra_produto_detalhes">
-                            <p>Produto</p>
-                            <p>40 <b>STN</b></p>
+                            <p><b>Produto</b></p>
+                            <p class="price">17.99 STN</p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
-                                value="1"><br><br>
+                            <span class="qt-minus">-</span>
+                            <span class="qt">3</span>
+                            <span class="qt-plus">+</span>
+                            <br>
+                            <p><b>preço total:</b></p>
+                            <p class="full-price"></p>
+                            <br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
-
                 </div>
+                <!--Cada intem no carinho-->
 
 
             </form>
@@ -221,6 +231,9 @@
 
     </footer>
     <!--footer-->
+
+    <!--importing jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/entrar_reg.js"></script>

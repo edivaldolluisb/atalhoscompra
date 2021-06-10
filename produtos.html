@@ -188,16 +188,21 @@
                     <div class="carinho_produto">
                         <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
                         <div class="compra_produto_detalhes">
-                            <p>Produto</p>
-                            <p>40 <b>STN</b></p>
+                            <p><b>Produto</b></p>
+                            <p class="price">17.99 STN</p>
                             <br>
-                            <input type="number" name="quantidade_de_produto" min="0" class="quantidade_de_produto"
-                                style="text-align: center;" value="1">
-                            <br><br>
+                            <span class="qt-minus">-</span>
+                            <span class="qt">3</span>
+                            <span class="qt-plus">+</span>
+                            <br>
+                            <p><b>preço total:</b></p>
+                            <p class="full-price"></p>
+                            <br>
                             <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
                         </div>
                     </div>
                 </div>
+
             </form>
 
         </div>
@@ -242,12 +247,14 @@
 
     </footer>
     <!--footer-->
-
+    <!--importing jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/entrar_reg.js"></script>
     <script src="./js/produtos.js"></script>
     <script src="./js/popup_perfil.js"></script>
+    <script src="./js/carrinho.js"></script>
     <!--Importing Scripts-->
 
 </body>
