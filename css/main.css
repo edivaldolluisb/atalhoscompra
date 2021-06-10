@@ -144,16 +144,16 @@
   }*/
   
   /* The dot/bullet/indicator container */
-  /*.dot-container {
+  .dot-container {
 	text-align: center;
 	padding: 20px;
 	background: rgba(0, 0, 0, 0.6);
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
-  }*/
+  }
   
   /* The dots/bullets/indicators */
- /* .dot {
+  .dot {
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
@@ -162,13 +162,12 @@
 	border-radius: 50%;
 	display: inline-block;
 	transition: background-color 0.6s ease;
-  }*/
+  }
   
   /* Add a background color to the active dot/circle */
-  /*.active, .dot:hover {
+  .active, .dot:hover {
 	background-color: #717171;
   }
-  */
   
   /* Add an italic font style to all quotes */
   .slide_de_texto p {font-style: italic; color: white;}

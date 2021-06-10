@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./menu/menu.css">
-    <link rel="stylesheet" href="./css/entrar.css">
-    <link rel="stylesheet" href="./css/reg.css">
-    <link rel="stylesheet" href="./css/registrar_entrar.css">
-    <link rel="stylesheet" href="./css/carinho_de_compras.css">
-
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,7 +17,7 @@
     <link rel="icon" href="./shopping-bag.svg" />
 
 
-    <title>Santo Coisas</title>
+    <title>Atalho Compras</title>
 </head>
 
 <body>
@@ -31,7 +26,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Santo Coisas</h1>
+                <h1>Atalho Compras</h1>
             </div>
             <ul class="nav-links">
                 <li class="menu-hover">
@@ -42,19 +37,18 @@
                     <a href='./produtos.html'>Produtos</a>
                 </li>
                 <li class="menu-hover">
-                    <a href='./galeria.html'>Galeria</a>
+                    <a href='#'>Galeria</a>
                 </li>
 
                 <li class="menu-hover">
                     <a href='./sobre.html'>Sobre Nós</a>
                 </li>
-                <li class="menu-hover" onclick="openEntrar()">
-                    <a href='./entrar.html'>Entrar</a>
+                <li class="menu-hover">
+                    <a href='#'>Entrar</a>
                 </li>
-                <li class="menu-hover" onclick="openReg()">
-                    <a href='./registrar.html'>Registrar</a>
+                <li class="menu-hover">
+                    <a href='#'>Registar</a>
                 </li>
-
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -66,33 +60,21 @@
         <!--nav bar de carinho e perfil -->
         <nav>
             <div id="carinho_perfil">
-                <span id="quantidade_item_carinho"><b>2</b></span>
-                <a href="#" onclick="carinho_on()">
-                    <img src="./imagens/icones/icons8-buying-40.png" alt="Carinho de compras">
+                <a href="#">
+                    <img src="./imagens/icones/Nova pasta/icons8-scarlet-shopping-basket-40.png"
+                        alt="Carinho de compras">
                 </a>
                 <a href="#">
-                    <img src="./imagens/icones/icons8-male-user-40.png" id="perfil_usuário" alt="Perfil">
+                    <img src="./imagens/icones/Nova pasta/icons8-customer-40.png" alt="Perfil">
                 </a>
             </div>
         </nav>
     </header>
     <!--end of mn-->
-    <!--Pop up-->
-    <div class="popup_perfil">
-        <p>jorge medeiros</p>
-        <p id="user_email">Jorgemedeiros@gmail.com</p>
-        <div>
-            <a href=".//perfil.html">Gerenciar Conta</a>
-        </div>
-        <div>
-            <button type="button" id="logout_sair">Sair</button>
-        </div>
-    </div>
-
     <!--Main Content-->
     <section class="banner">
         <div class="banner-text">
-            <h1>Santo Coisas</h1>
+            <h1>Atalho Compras</h1>
             <h2>Descubra os melhores produtos! <br> STP em alta!</h2>
         </div>
 
@@ -102,7 +84,7 @@
 
                 <!-- Full-width slides/quotes -->
                 <div class="mySlides">
-                    <p>Seja bem vindo ao Santo Coisas. A nossa missão é de garantir a satisfação dos nossos clientes.
+                    <p>Seja bem vindo ao Atalho Compras. A nossa missão é de garantir a satisfação dos nossos clientes.
                     </p>
                 </div>
 
@@ -114,12 +96,16 @@
                     <p>Seja prestigiado pela qualidade dos nossos produtos.</p>
                 </div>
 
-                <!-- Next/prev buttons -->
-                <!-- 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+
+
             </div>
 
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
 
 
@@ -127,129 +113,6 @@
 
     </section>
     <!--Main Content-->
-
-    <!--outras seções carinho de compras, Entrar e registrar-->
-
-    <!--Carrinho de Compras-->
-    <section id="carinho_compras">
-        <button id="carinho_fechar" onclick="carinho_off()"><img
-                src="https://img.icons8.com/ios-filled/50/000000/multiply.png" /></button>
-
-
-        <div class="div_compras" style="margin-top: 020%;">
-            <h1 style="position: relative; width: 100%; text-align: center;">Os seus Produtos</h1>
-            <form action="">
-                <!--Cada intem no carinho-->
-                <div class="intem_produto">
-                    <div class="carinho_produto">
-                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
-                        <div class="compra_produto_detalhes">
-                            <p><b>Produto</b></p>
-                            <p class="price">5.99 STN</p>
-                            <br>
-                            <span class="qt-minus">-</span>
-                            <span class="qt">3</span>
-                            <span class="qt-plus">+</span>
-                            <br>
-                            <p><b>preço total:</b></p>
-                            <p class="full-price"></p>
-                            <br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Cada intem no carinho-->
-                <div class="intem_produto">
-                    <div class="carinho_produto">
-                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
-                        <div class="compra_produto_detalhes">
-                            <p><b>Produto</b></p>
-                            <p class="price">17.99 STN</p>
-                            <br>
-                            <span class="qt-minus">-</span>
-                            <span class="qt">3</span>
-                            <span class="qt-plus">+</span>
-                            <br>
-                            <p><b>preço total:</b></p>
-                            <p class="full-price"></p>
-                            <br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Cada intem no carinho-->
-                <div class="intem_produto">
-                    <div class="carinho_produto">
-                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
-                        <div class="compra_produto_detalhes">
-                            <p><b>Produto</b></p>
-                            <p class="price">5.99 STN</p>
-                            <br>
-                            <span class="qt-minus">-</span>
-                            <span class="qt">3</span>
-                            <span class="qt-plus">+</span>
-                            <br>
-                            <p><b>preço total:</b></p>
-                            <p class="full-price"></p>
-                            <br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Cada intem no carinho-->
-                <div class="intem_produto">
-                    <div class="carinho_produto">
-                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
-                        <div class="compra_produto_detalhes">
-                            <p><b>Produto</b></p>
-                            <p class="price">7.99 STN</p>
-                            <br>
-                            <span class="qt-minus">-</span>
-                            <span class="qt">3</span>
-                            <span class="qt-plus">+</span>
-                            <br>
-                            <p><b>preço total:</b></p>
-                            <p class="full-price"></p>
-                            <br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Cada intem no carinho-->
-                <div class="intem_produto">
-                    <div class="carinho_produto">
-                        <img src="./imagens/cosmetic-bottle.png" alt="imagem do produto">
-                        <div class="compra_produto_detalhes">
-                            <p><b>Produto</b></p>
-                            <p class="price">20.99 STN</p>
-                            <br>
-                            <span class="qt-minus">-</span>
-                            <span class="qt">3</span>
-                            <span class="qt-plus">+</span>
-                            <br>
-                            <p><b>preço total:</b></p>
-                            <p class="full-price"></p>
-                            <br>
-                            <button class="remover_do_cesto" style="cursor: pointer;">remover</button>
-                        </div>
-                    </div>
-                </div>
-                <!--Cada intem no carinho-->
-
-            </form>
-
-        </div>
-        <p id="preco_total">Preço total: <b>160</b> STN</p>
-        <div id="finalizar_compra">
-            <button id="Finalizar" type="submit" style="margin-top: 2%;">Finalizar</button>
-        </div>
-
-
-    </section>
-
-
-
-
 
     <!--footer-->
     <footer id="rodape">
@@ -260,12 +123,12 @@
             <a href="https://api.whatsapp.com/send?phone=+2399838301" target="_blank"><img
                     src="./imagens/icones/whatsapp.png" alt="whatsapp" width="40px"><span class="cttinfo">+239
                     9838301</span></a>
-            <a href="tel:+2399806659"><img src="./imagens/icones/icons8-phone-40.png" alt="telefone"><span
+            <a href="tel:+239 9806659"><img src="./imagens/icones/icons8-phone-40.png" alt="telefone"><span
                     class="cttinfo">+239 9838301</span></a>
         </div>
         <div id="sendmail">
-            <form action="#" method="POST">
-                <label for="form_email" style="margin-bottom: 03%;">Receba as novidades no seu e-mail: </label>
+            <form action="#" method="post">
+                <label for="form_email" style="margin-bottom: 03%;">Receba as novidades no seu e-mail</label>
                 <input type="email" name="form_email" id="form_email" placeholder="Digite o seu e-mail">
                 <input type="submit" value="Enviar">
             </form>
@@ -279,14 +142,9 @@
 
     </footer>
     <!--footer-->
-    <!--importing jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Importing Scripts-->
     <script src="menu/menu.js"></script>
     <script src="./js/slide_de_textos.js"></script>
-    <script src="./js/entrar_reg.js"></script>
-    <script src="./js/carrinho.js"></script>
-    <script src="./js/popup_perfil.js"></script>
     <!--Importing Scripts-->
 </body>
 
