@@ -132,4 +132,5 @@ input[type=number] {
     background-color: rgb(149, 200, 216);
     line-height: 3;
     border-radius: 40px;
+    cursor: pointer;
 }
