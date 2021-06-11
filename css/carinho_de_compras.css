@@ -1,0 +1,135 @@
+
+#carinho_compras{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    
+}
+#carinho_fechar{
+    background-color: rgb(149, 200, 216); 
+    border-style: none; 
+    float: right; 
+    position: relative;
+    cursor: pointer;
+    margin: 1%;
+    border-radius: 4px;
+    
+}
+.div_compras{
+    position: relative;
+    
+    width: 100%;
+    padding: 01%;
+    
+
+}
+.div_compras img{
+    width: 40%;
+}
+.carinho_produto{
+    display: flex;
+    
+}
+.intem_produto{
+    margin-top: 05%;
+}
+.intem_produto button{
+    border-style: none;
+    padding: 2%;
+    background-color: rgb(149, 200, 216);
+    width: 30%;
+    margin: auto;
+    
+}
+.compra_produto_detalhes{
+    width: 100%;
+}
+.quantidade_de_produto{
+    width: 15%;
+    font-weight: bold;
+    padding-left: 3px;
+}
+#preco_total{
+    text-align: center;
+    margin-top: 1em;
+}
+#Finalizar{
+    padding: 0.5rem;
+    border-style: none;
+    background-color: rgb(67, 139, 161);
+    color: white;
+    margin: auto;
+}
+#finalizar_compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 01%;
+}
+
+
+@media screen and (min-width:950px) {
+    #carinho_compras{
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .div_compras{
+        height: 64vh;
+        overflow-y: auto;
+        background-color: rgba(255, 255, 255, 0.459); 
+
+    }/*bara de rolagem da divcompras*/        
+    .div_compras::-webkit-scrollbar{
+            width: 8px;
+        }
+    .div_compras::-webkit-scrollbar-thumb{
+        background: rgba(27, 27, 27, 0.8);
+    }
+    ::-webkit-scrollbar-thumb{
+        border-radius: 2px;
+    }
+    
+}
+@media screen and (min-width:1024px) {
+    .intem_produto button{
+        width: 20%;
+    }
+}
+
+.remover_do_cesto{
+    border-radius: 5px;
+    
+}
+
+/*remove arrows/spinners*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*aumentar e diminuir quantidades o carrinho*/
+
+.qt-minus, .qt-plus{
+    padding: 2%;
+    background-color: rgb(149, 200, 216);
+    line-height: 3;
+    border-radius: 40px;
+}

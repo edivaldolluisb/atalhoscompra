@@ -1,0 +1,93 @@
+#carinho_perfil{
+    display: none;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+h2{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1rem;
+}
+
+input, select{
+    font-weight: bold;
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(0, 162, 255, 0.76);    
+    padding: 2.5%;
+    position: relative;
+    margin: 3% auto;
+    width: 80%;
+}
+input:focus{
+    outline: none;
+}
+fieldset{
+    margin:1%;
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+button{
+    color: white;
+    margin: 5% auto;
+    padding: 0.5em;
+    border-style: none;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 3px;
+}
+button[type=submit], #cancelar_edit{
+    display: none;
+}
+
+@media screen and (min-width:900px) {
+    input, select{
+        font-size: large;
+        display: block;
+        width: 30%;
+        text-align: center;
+        transition: width 1s;
+    }
+    fieldset{
+        display: block;
+        
+    }
+    input:hover{
+        width: 50%;
+
+    }
+    button{
+        font-size: medium;
+    }
+    
+}
+
+
+body::-webkit-scrollbar{
+	width:8px;
+}
+body::-webkit-scrollbar-thumb{
+	background: rgba(27, 27, 27, 0.8);
+}
+
+#nota{
+    text-align: center;
+    margin-bottom: 10em;
+}
+

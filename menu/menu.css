@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(77, 38, 0, 0.6);
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+@media screen and (max-width:370px) {
+    .logo {
+        font-size: 1.5vh;
+    }
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+@media screen and (min-width:1135px){
+    .nav-links {
+        width: 50%;
+    }
+}
+.nav-links li {
+    list-style: none; 
+}
+
+
+.nav-links a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+/*burger menu*/
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 84vh;
+        top: 16vh;
+        background-color: rgba(77, 38, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*width: 50%;*/
+        width: 80%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+        padding: 2%;
+        border-radius: 3px;
+    }
+    .nav-links li:hover{
+   
+        background-color: brown;
+    }
+    
+    
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+        transform: translateX(0%);
+        z-index: 1;/*por causa do conflito entre camadas*/
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+/*estilos da nav bar de carrinhos e de perfil*/
+#carinho_perfil{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1094px) {
+    #carinho_perfil{
+        width: 20%;
+    }
+}
+@media screen and (max-width:650px) {
+    #carinho_perfil{
+        width: 35%;
+    }
+}
+
+
+/*quantidade de item no carrinho*/
+
+#quantidade_item_carinho{
+    position: absolute;
+    background-color: #ffffffe6;
+    top: 0;
+    border-radius: 10px;
+    padding: 3px 4px 1px;
+    text-align: center;
+    min-width: 8px;
+    line-height: 1;
+    
+}
+
+/*nav do carrinho e do perfil*/
+#carinho_perfil{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*pop up perfil*/
+
+.popup_perfil{
+    color: #ffffff;
+    display: none;
+    position: absolute;
+    top: 16vh;
+    right: 10%;
+    background-color: rgb(138, 115, 92);
+    padding-top: 1em;
+    height: 25vh;
+    font-size: 10pt;
+    z-index: 1;
+    width: 280px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width:340px) {
+    .popup_perfil{
+        width: 250px;
+        right: 5%;
+    }
+}
+.popup_dispaly{ /*será ativada apenas ao clique*/
+    display: block;
+}
+.popup_perfil p{
+    width: 100%;
+    text-align: center;
+    font-size: 12pt;
+}
+#user_email{
+    font-size: 10pt;
+}
+
+.popup_perfil a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup_perfil div{
+    
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+}
+#logout_sair{
+    width:20%;
+    margin: auto;
+    color: white;
+    margin: 5% auto auto auto;
+    padding: 0.5em;
+    border-style: none;
+    background-color: rgba(88, 170, 218, 0.733);
+    border-radius: 3px;
+}

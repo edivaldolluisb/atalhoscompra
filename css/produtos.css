@@ -1,0 +1,152 @@
+#categorias h1, #produtos h1{
+    font-size: 16px;
+}
+#categorias h2{
+    font-size: 12px;
+}
+#categorias{
+    position: relative;
+    display: block;
+    margin: 5% auto 3% auto;
+    text-align: center;
+    
+}
+@media screen and (min-width:1050px) {
+    #categorias h1, #produtos h1{
+        font-size: 1.5rem;
+    }
+    #categorias h2{
+        font-size: 15px;
+    } 
+}
+.prod img {
+    width: 100%;
+}
+#produtos h1{
+    margin-left: 10px;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+.prod{
+    width: 30%;
+    background-color: aliceblue;
+    margin: 1% auto;
+    text-align: center;
+
+}
+#produtos a{
+    width: 30%;
+}
+@media screen and (max-width: 375px) {
+    .prod{
+        width:48%;
+        margin: 1%;
+    }
+}
+#detalhes{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+#detalhes img{
+    
+    width: 100%;
+}
+#detalhes > div{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    
+}
+#preco{
+    
+    font-size: 100%;
+    margin: 3% 35%;
+    padding: 5px;
+    color: black;
+    background-color: rgb(149, 200, 216);
+    border-radius: 5px;
+}
+input[type="number"]{
+    padding: 1%;
+
+}
+#comprar_btn{
+    margin-top: 10px;
+    padding: 1.5%;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(149, 200, 216);
+    cursor: pointer;
+}
+
+@media screen and (min-width:600px) {
+    #detalhes img{
+        width: 50%;
+        float: left;
+    }
+    #detalhes > div{
+        width: 50%;
+        float: right;
+    }
+    
+}
+
+
+/*fim da nav de compras*/
+
+/*input de pesquisa*/
+.search_bar{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+.search_bar input[type=search], button{
+    padding: 1%;
+
+}
+@media screen and (min-width:700px) {
+    .search_bar input{
+        width: 50%;
+    }
+}
+.aumentar, .diminuir{
+    background-color: rgb(149, 200, 216);
+    border-style: none;
+    border-radius: 3px;
+}
+
+/*Adicionar ao carrinho*/
+
+.add_shopcart{
+    display: flex;
+    flex-direction: column;    
+    margin: auto ;
+    align-items: center;
+}
+.add_shopcart button, #add_sucesso{
+    width: 50%;
+}
+#add_sucesso{
+    display: none;
+    color: #008000;
+    
+}
+#continuar_compra{
+    display: none;
+    border-style: none;
+    background-color: rgb(149, 200, 216);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+

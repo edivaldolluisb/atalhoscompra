@@ -1,0 +1,78 @@
+/*Todos*/
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.form{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% auto 10% auto;
+} 
+fieldset{   
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+legend {
+    background-color: rgb(149, 200, 216);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: x-large;
+    margin: 5% auto;
+} 
+
+input[type=tel], input[type=password], .input_registrar, input[type=text], input[type=email], select {
+    padding: 2.5%;
+    margin: 5% auto;
+    width: 85%;
+    border-radius: 3px;
+  
+}
+.borda_botton{
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(91, 153, 182);
+}
+.input_registrar{
+    border-style: none;
+    background-color: rgba(0, 162, 255, 0.76);
+    cursor: pointer;
+}
+input, select:focus{
+    outline: none;
+}
+input, select, option{
+    font-weight: bold;
+}
+
+
+/*Entrar*/
+
+p a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#error{
+    color: #ff0000;
+}
+
+
+/*Registrar*/
+#distritos{
+    border: none;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgb(91, 153, 182);
+}
+
+
+    
+   
