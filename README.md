@@ -1,2 +1,0 @@
-# atalhos-mine
- atalhos compras
