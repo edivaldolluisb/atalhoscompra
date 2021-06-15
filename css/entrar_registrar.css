@@ -61,7 +61,7 @@ fieldset{
 }
 
 legend {
-    background-color: rgb(149, 200, 216);
+    background-color: rgba(0, 162, 255, 0.76);
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
@@ -79,7 +79,7 @@ input[type=tel], input[type=password], .input_registrar, input[type=text], input
 .borda_botton{
     border: none;
     box-sizing: border-box;
-    border-bottom: 3px solid rgb(91, 153, 182);
+    border-bottom: 3px solid rgba(0, 162, 255, 0.76);
 }
 .input_registrar{
     border-style: none;
