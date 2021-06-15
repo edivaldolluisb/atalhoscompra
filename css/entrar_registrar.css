@@ -1,8 +1,48 @@
+
+
+/* alterações a serem feitas no menu*/
+.logo{
+    color: #000000;
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000000;
+}
+#quantidade_item_carinho, .burger div{
+    color: #ffffff;
+    background-color: #000000;
+   
+}
+.nav-links a {
+    color: #000000;
+}
+@media screen and (max-width: 1135px) {
+  
+    .nav-links {
+
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+    
+    .nav-links a {
+        color: #000000;
+    }
+    .nav-links a:hover {
+        color: #ffffff;
+    }
+    .nav-links li:hover{
+   
+        background-color: rgba(34, 23, 23, 0.582);
+    }
+    
+}
+
 /*Todos*/
 *{
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+
 
 .form{
 
