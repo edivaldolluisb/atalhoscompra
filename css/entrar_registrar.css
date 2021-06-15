@@ -36,6 +36,25 @@ nav {
     }
     
 }
+/*pop up perfil*/
+
+.popup_perfil{
+    color: #000000;
+    display: none;
+    position: absolute;
+    top: 16vh;
+    right: 10%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 1em;
+    height: 25vh;
+    font-size: 10pt;
+    z-index: 1;
+    width: 280px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.popup_dispaly{ /*será ativada apenas ao clique*/
+    display: block;
+}
 
 /*Todos*/
 *{

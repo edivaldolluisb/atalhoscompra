@@ -64,13 +64,24 @@
                 <a href="#" onclick="carinho_on()">
                     <img src="./imagens/icones/icons8-buying-40-.png" alt="Carinho de compras">
                 </a>
-                <a href="./perfil.html">
-                    <img src="./imagens/icones/icons8-male-user-40-.png" alt="Perfil">
+                <a href="#">
+                    <img src="./imagens/icones/icons8-male-user-40-.png" id="perfil_usuário" alt="Perfil">
                 </a>
             </div>
         </nav>
     </header>
     <!--end of mn-->
+    <!--Pop up-->
+    <div class="popup_perfil">
+        <p>jorge medeiros</p>
+        <p id="user_email">Jorgemedeiros@gmail.com</p>
+        <div>
+            <a href=".//perfil.html">Gerenciar Conta</a>
+        </div>
+        <div>
+            <button type="button" id="logout_sair">Sair</button>
+        </div>
+    </div>
 
 
     <!--Registrar-->
@@ -126,6 +137,7 @@
 
 
     <script src="./menu/menu.js"></script>
+    <script src="./js/popup_perfil.js"></script>
 </body>
 
 </html>
