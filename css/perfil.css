@@ -3,7 +3,7 @@
 }
 .logo h1 a{
     text-decoration: none;
-    color: white;
+    color: #000000
 }
 
 
@@ -49,7 +49,7 @@ button{
     margin: 5% auto;
     padding: 0.5em;
     border-style: none;
-    background-color: rgba(88, 170, 218, 0.733);
+    background-color: rgba(0, 162, 255, 0.76);
     border-radius: 3px;
 }
 button[type=submit], #cancelar_edit{

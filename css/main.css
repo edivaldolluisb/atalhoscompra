@@ -2,23 +2,20 @@
 	font-family: "Poppins", sans-serif;
 }
 .banner{
-	height: 100vh;
 	width: 100%;
 	background-image: url(../imagens/background2.jpg);
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center ;
-	/*z-index: -1;*/
+	background-attachment: fixed; 
 	overflow: hidden;
 }
 .banner, #rodape{
 	display: block;
 	position: relative;
 }
-.banner-text, .slide_de_texto{
+.banner-text, .slide_de_texto, #apresentacao_de_produtos{
 	display: block;
 	position: relative;	
-	top: 18%;
 	width: 70%;
 	margin: 1% auto;
 
@@ -30,6 +27,7 @@
 
 /*banner text center*/
 .banner-text{
+	margin-top: 18%;
 	background-color: rgba(59, 59, 59, 0.6);
 }
 
@@ -95,7 +93,7 @@
 /*Slide de textos*/
 
 @media screen and (max-width:510px) {
-	.slide_de_texto{
+	.slide_de_texto, #apresentacao_de_produtos{
 		width: 85%;
 	}
 }
@@ -175,14 +173,35 @@
   
 /*Slide de textos*/
 
+/*exposição de produtos*/
+#apresentacao_de_produtos{
+
+	margin-top: 1%;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+}
+.produto_exposto{	
+	
+	background-color: #ffffff;
+	margin-left: 2%;
+	text-align: center;
+	border-radius: 3px;
+}
+.produto_exposto p:last-child {
+	margin-bottom: 0.5em;
+  }
+.produto_exposto img{
+	width: 100%;
+}
+
 /*botão*/
 
 #botao{
 	display: block;
 	position: relative;	
-	top: 20%;
 	width: 15%;
-	margin: auto;
+	margin: 10% auto;
 	text-align: center;
 	padding: 01%;
 	border-radius: 03px;
@@ -204,7 +223,6 @@
 	background-color: white;
 	padding: 2%;
 	clear: both;
-	position: relative;
 }
 #ctticons{
 	margin-top: 2%;
