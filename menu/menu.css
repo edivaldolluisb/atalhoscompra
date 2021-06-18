@@ -12,12 +12,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgba(77, 38, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000000;
     font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    color: rgb(226, 226, 226);
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -44,7 +45,7 @@ nav {
 
 
 .nav-links a {
-    color: rgb(226, 226, 226);
+    color: #000000;
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
@@ -58,7 +59,8 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    color: #ffffff;
+    background-color: #000000;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -79,7 +81,7 @@ nav {
         right: 0px;
         height: 84vh;
         top: 16vh;
-        background-color: rgba(77, 38, 0, 0.6);
+        background-color: rgba(255, 255, 255, 0.9);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,7 +98,7 @@ nav {
     }
     .nav-links li:hover{
    
-        background-color: brown;
+        background-color: rgba(34, 23, 23, 0.582);
     }
     
     
@@ -160,8 +162,10 @@ nav {
 
 #quantidade_item_carinho{
     position: absolute;
-    background-color: #ffffffe6;
+    color: #ffffff;
+    background-color: #000000;
     top: 0;
+    left: 42%;
     border-radius: 10px;
     padding: 3px 4px 1px;
     text-align: center;
@@ -169,7 +173,24 @@ nav {
     line-height: 1;
     
 }
-
+@media screen and (min-width:420px) {
+    #quantidade_item_carinho{
+        left: 36%;
+   
+    }
+}
+@media screen and (min-width:830px) {
+    #quantidade_item_carinho{
+        left: 34%;
+   
+    }
+}
+@media screen and (min-width:1315px) {
+    #quantidade_item_carinho{
+        left: 33%;
+   
+    }
+}
 /*nav do carrinho e do perfil*/
 #carinho_perfil{
     width: 40%;
@@ -183,12 +204,12 @@ nav {
 /*pop up perfil*/
 
 .popup_perfil{
-    color: #ffffff;
+    color: #000000;
     display: none;
     position: absolute;
     top: 16vh;
     right: 10%;
-    background-color: rgb(138, 115, 92);
+    background-color: rgb(255, 1255, 255);
     padding-top: 1em;
     height: 25vh;
     font-size: 10pt;
