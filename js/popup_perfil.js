@@ -6,3 +6,15 @@ perfil.addEventListener('click', ()  =>{
     
 
 })
+
+/*remover as classes do perfil*/
+
+/*ao clicar no menu*/
+var menu_popup_remove = window.document.querySelector('.burger')
+menu_popup_remove.addEventListener('click', ()  =>{
+    pop_up.classList.remove("popup_dispaly")})
+
+/* ao clicar no baner */
+var baner_popup_remove = window.document.querySelector('.banner')
+baner_popup_remove.addEventListener('click', ()  =>{
+    pop_up.classList.remove("popup_dispaly")})
