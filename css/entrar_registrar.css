@@ -37,6 +37,13 @@ input[type=tel], input[type=password], .input_registrar, input[type=text], input
     border-radius: 50px;
   
 }
+@media screen and (min-width:1000px) {
+    input[type=tel], input[type=password], .input_registrar, input[type=text], input[type=email], select{
+        padding: 1.5%;
+        width: 55%;
+        margin: 2% auto;
+    }
+}
 .borda_botton{
 
     border: 3px solid rgba(0, 162, 255, 0.76);
