@@ -77,7 +77,7 @@
 
 @media screen and (min-width:950px) {
     #carinho_compras{
-        width: 50%;
+        width: 70%;
         height: 100vh;
         top: 0;
         left: auto;
@@ -130,7 +130,35 @@ input[type=number] {
 .qt-minus, .qt-plus{
     padding: 2%;
     background-color: rgb(149, 200, 216);
-    line-height: 3;
+    line-height: 1;
     border-radius: 40px;
     cursor: pointer;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width:950px) {
+    #carinho_compras{
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: auto;
+        right: 0;
+        bottom: 0;
+    }
+    .price{
+        margin-left: 1em;
+    }
+    .div_compras{
+        height: 64vh;
+        overflow-y: auto;
+        background-color: rgba(255, 255, 255, 0.459); 
+    }
+    .compra_produto_detalhes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
