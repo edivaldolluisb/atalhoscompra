@@ -1,44 +1,25 @@
-
-#carinho_compras{
-    position: absolute;
-    display: none;
-    width: 100%;
-    height: 200%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(255, 255, 255);
-    z-index: 2;
-    
+*{
+    font-family: "Poppins", sans-serif;
 }
-#carinho_fechar{
-    background-color: rgb(149, 200, 216); 
-    border-style: none; 
-    float: right; 
+#carinho_compras{
     position: relative;
-    cursor: pointer;
-    margin: 1%;
-    border-radius: 4px;
-    
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
 }
 .div_compras{
     position: relative;
-    
     width: 100%;
     padding: 01%;
-    
-
 }
 .div_compras img{
     width: 40%;
 }
 .carinho_produto{
-    display: flex;
-    
+    display: flex;   
 }
 .intem_produto{
-    margin-top: 05%;
+    margin-top: 1%;
 }
 .intem_produto button{
     border-style: none;
@@ -46,7 +27,6 @@
     background-color: rgb(149, 200, 216);
     width: 30%;
     margin: auto;
-    
 }
 .compra_produto_detalhes{
     width: 100%;
@@ -65,7 +45,7 @@
     border-style: none;
     background-color: rgb(67, 139, 161);
     color: white;
-    margin: auto;
+    margin: auto auto 1em auto;
 }
 #finalizar_compra{
     display: flex;
@@ -84,12 +64,7 @@
         right: 0;
         bottom: 0;
     }
-    .div_compras{
-        height: 64vh;
-        overflow-y: auto;
-        background-color: rgba(255, 255, 255, 0.459); 
-
-    }/*bara de rolagem da divcompras*/        
+    /*bara de rolagem da divcompras*/        
     .div_compras::-webkit-scrollbar{
             width: 8px;
         }
@@ -138,27 +113,25 @@ input[type=number] {
 
 @media screen and (min-width:950px) {
     #carinho_compras{
-        width: 50%;
-        height: 100vh;
-        top: 0;
-        left: auto;
-        right: 0;
-        bottom: 0;
+        width: 100%;
+        
     }
     .price{
         margin-left: 1em;
     }
-    .div_compras{
-        height: 64vh;
-        overflow-y: auto;
-        background-color: rgba(255, 255, 255, 0.459); 
-    }
+ 
     .compra_produto_detalhes{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        
     }
 
-    
+}
+.div_compras{
+    margin-top: 5%;
+}
+.compra_produto_detalhes img{
+    width: 50px;
 }
