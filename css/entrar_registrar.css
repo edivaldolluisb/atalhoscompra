@@ -4,6 +4,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+header{
+    border-bottom: solid #000000;
+}
+
 
 .form{
 
