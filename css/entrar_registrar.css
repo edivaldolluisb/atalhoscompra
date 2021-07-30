@@ -35,9 +35,9 @@ legend {
 } 
 
 input[type=tel], input[type=password], .input_registrar, input[type=text], input[type=email], select {
-    padding: 2.5%;
-    margin: 3% auto;
-    width: 85%;
+    padding: 2%;
+    margin: 2% auto;
+    width: 60%;
     border-radius: 50px;
   
 }
