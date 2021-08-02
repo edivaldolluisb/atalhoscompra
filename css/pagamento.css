@@ -17,14 +17,15 @@
     justify-content: space-evenly;
     
 }
-.tipos_de_pagamento div {
+.tipos_de_pagamento h2 {
     cursor: pointer;
     border: 0.5px solid;
     margin: 1rem auto;
     padding: 0.3rem;
     border-radius: 3px;
+    font-size: medium;
 }
-.tipos_de_pagamento div:hover {
+.tipos_de_pagamento h2:hover {
     background-color: #000000;
     color: #ffffff;
 }
