@@ -72,6 +72,13 @@ input[type="file"] {
 .enviar_comprovativo{
     margin-top: 2rem;
 }
+.enviar_comprovativo form{
+    margin-top: 1rem;
+}
+.enviar_comprovativo form label{
+    margin: 1em;
+}
+
 
 .detalhes_cash{
     display: none;
