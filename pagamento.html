@@ -16,17 +16,34 @@
 <body>
     <div id="formas_de_pagamento">
         <h1>Formas de Pagamento</h1>
-        <div>
+        <div class="tipos_de_pagamento">
             <div>Cash</div>
-            <div>Trasferência Bancária</div>
+            <div>Trasferência</div>
         </div>
-        <div>
+        <div class="detalhes_cash">
             <ul>
                 <li>Caso o cliente escolha ir buscar a encomenda à loja física o pagamento será feito nesse mesmo local.</li>
                 <li>Caso a entrega seja ao domicílio o pagamento será feito ao receber a encomenda.
                 </li>
-                <a href="#">Concluir</a>
-        </ul>
+            </ul>
+            <form action="#" method="post">
+                <label for="opcoes">Como deseja receber o produto?</label>
+                <select name="" id="opcoes">
+                        <option value="loja">Na loja</option>
+                        <option value="personalizada">Entrega Personalizada</option>
+                </select>
+                <button type="submit">Concluir</button>
+            </form>
+        </div>
+        <div class="detalhes_transferencia">
+            <p>O cliente deverá realizar a trasferência tendo em conta os seguintes detalhes:</p>
+            <p>Banco: BISTP</p>
+            <p>Número de conta: 119428610001</p><p>IBAN: 999999</p>
+
+            <form action="#" method="post">
+                <input type="file">
+            </form>
+
         </div>
     </div>
 </body>

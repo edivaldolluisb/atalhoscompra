@@ -5,6 +5,63 @@
 }
 
 #formas_de_pagamento {
-    background-color: rgb(231, 177, 177);
+    margin: 3rem 2rem;
    
+}
+#formas_de_pagamento h1{
+    text-align: center;
+}
+.tipos_de_pagamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.tipos_de_pagamento div {
+    cursor: pointer;
+    border: 0.5px solid;
+    margin: 1rem auto;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+.tipos_de_pagamento div:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.detalhes_cash ul{
+    margin: 1rem 0.5rem;
+    text-align: justify;
+}
+form button{
+    padding: 0.3rem;
+    background-color: #dbdbdb;
+    color: #000000;
+    border-style: none;
+    border-radius: 3px;    
+}
+form button:hover{
+    background-color: #424242;
+    color: #ffffff;
+      
+}
+form select {
+    border-radius: 3px;  
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+    border-style: 0.5px;
+}
+form select:hover {
+    background-color: #424242;
+    color: #ffffff;
+}
+
+/*via transferência bancária*/
+.detalhes_transferencia p:not(:first-child){
+    font-size: 10pt;
+}
+.detalhes_transferencia p:first-child{
+    margin-bottom: 0.5em;
+}
+.detalhes_cash{
+    display: none;
 }
