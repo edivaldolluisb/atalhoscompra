@@ -64,10 +64,12 @@ form select:hover {
     margin-bottom: 0.5em;
 }
 input[type="file"] {
-    max-width: 100%;
-    display: flex;
-   
-  }
+    max-width: 100%; 
+}
+.enviar_comprovativo{
+    margin-top: 2rem;
+}
+
 .detalhes_cash{
     display: none;
 }
