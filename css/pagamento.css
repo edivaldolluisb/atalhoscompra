@@ -57,6 +57,9 @@ form select:hover {
 }
 
 /*via transferência bancária*/
+.detalhes_transferencia{
+    display: none;
+}
 .dados_da_conta{
     font-size: 10pt;  
 }
@@ -89,7 +92,3 @@ select{
     margin-top: 0.5rem;
 }
 
-
-.detalhes_cash{
-    display: none;
-}
