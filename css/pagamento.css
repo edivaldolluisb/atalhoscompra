@@ -63,6 +63,11 @@ form select:hover {
 .detalhes_transferencia p:first-child{
     margin-bottom: 0.5em;
 }
+input[type="file"] {
+    max-width: 100%;
+    display: flex;
+   
+  }
 .detalhes_cash{
     display: none;
 }
