@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    
+
     <title>Formas de Pagamento</title>
 </head>
+
 <body>
     <div id="formas_de_pagamento">
         <h1>Formas de Pagamento</h1>
@@ -22,31 +24,37 @@
         </div>
         <div class="detalhes_cash">
             <ul>
-                <li>Caso o cliente escolha ir buscar a encomenda à loja física o pagamento será feito nesse mesmo local.</li>
+                <li>Caso o cliente escolha ir buscar a encomenda à loja física o pagamento será feito nesse mesmo local.
+                </li>
                 <li>Caso a entrega seja ao domicílio o pagamento será feito ao receber a encomenda.
                 </li>
             </ul>
             <form action="#" method="post">
                 <label for="opcoes">Como deseja receber o produto?</label>
                 <select name="" id="opcoes">
-                        <option value="loja">Na loja</option>
-                        <option value="personalizada">Entrega Personalizada</option>
+                    <option value="loja">Na loja</option>
+                    <option value="personalizada">Entrega Personalizada</option>
                 </select>
                 <button type="submit">Concluir</button>
             </form>
         </div>
         <div class="detalhes_transferencia">
             <p>O cliente deverá realizar a trasferência tendo em conta os seguintes detalhes:</p>
-            <p>Banco: BISTP</p>
-            <p>Número de conta: 119428610001</p>
-            <p>Para fora do país:</p>
-            <p>IBAN/NIB: ST23 000200000119428610167</p>
+            <div class="dados_da_conta">
+                <p>Banco: BISTP</p>
+                <p>Número de conta: 119428610001</p>
+                <p>Para fora do país:</p>
+                <p>IBAN/NIB: ST23 000200000119428610167</p>
+            </div>
+
 
             <form action="#" method="post">
                 <input type="file">
+                <button type="submit">Enviar</button>
             </form>
 
         </div>
     </div>
 </body>
+
 </html>
