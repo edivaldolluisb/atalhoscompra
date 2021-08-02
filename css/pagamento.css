@@ -57,8 +57,11 @@ form select:hover {
 
 /*via transferência bancária*/
 .dados_da_conta{
-    font-size: 10pt;
+    font-size: 10pt;  
+}
+.dados_da_conta p:nth-child(1), p:nth-child(4){
     font-weight: bold;
+    margin-top: 1rem;
 }
 .detalhes_transferencia p:first-child{
     margin-bottom: 0.5em;
