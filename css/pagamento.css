@@ -69,6 +69,8 @@ form select:hover {
 }
 input[type="file"] {
     max-width: 100%; 
+    margin-bottom: 1rem;
+    
 }
 .enviar_comprovativo{
     margin-top: 2rem;
@@ -76,8 +78,15 @@ input[type="file"] {
 .enviar_comprovativo form{
     margin-top: 1rem;
 }
-.enviar_comprovativo form label{
-    margin: 1em;
+.enviar_comprovativo form{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    max-width: 80%;
+}
+.enviar_comprovativo  select{
+    margin-top: 0.5rem;
 }
 
 
