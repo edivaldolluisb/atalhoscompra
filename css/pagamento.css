@@ -92,3 +92,29 @@ select{
     margin-top: 0.5rem;
 }
 
+@media screen and (min-width:800px) {
+    .detalhes_cash, .detalhes_transferencia{
+        width: 80%;
+        margin: auto;
+    }
+    select, form button{
+        max-width: 50%;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    .detalhes_cash, .detalhes_transferencia{
+        width: 78%;
+    }
+    select, form button{
+        max-width: 50%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .detalhes_cash, .detalhes_transferencia{
+        width: 72%;
+    }
+    select, form button{
+        max-width: 50%;
+    }
+}
