@@ -188,6 +188,9 @@
 	text-align: center;
 	border-radius: 3px;
 }
+.produto_exposto:hover{	
+	background-color: rgba(255, 255, 255, 0.7);
+}
 .produto_exposto p:last-child {
 	margin-bottom: 0.5em;
   }
