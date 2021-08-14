@@ -1,0 +1,60 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#imagem_de_perfil{
+    max-width: 2.5rem;
+}
+.head{
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.head_pesquisa, .head_outros{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.head_pesquisa{
+    width: 70%;
+}
+.head_pesquisa input{
+    width: 80%;
+    padding: 0.3rem;
+    
+}
+.head_outros{
+    width: 30%;
+}
+
+/* Inincio*/
+
+#inicio{
+    margin-top: 1rem;
+}
+#inicio h2, .dash-cards{
+    margin: auto 3rem;
+}
+#inicio h2{
+    margin-bottom: 1rem;
+}
+.dash-card-information{
+    display: flex;
+    flex-flow: row wrap;
+    width: 10rem;
+}
+.dash-card-information .ti-briefcase{
+    width: 40%;
+    float: left;
+}
+.dash-card-information div{
+    width: 40%;
+    float: right;
+}
