@@ -97,9 +97,14 @@
     min-height: 90vh;
 }
 #utilizadores div{
-    width: 90%;
-    margin: auto;
     overflow-x: auto;
+}
+@media screen and (max-width:610px) {
+    #utilizadores div{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+    }
 }
 #utilizadores h2{
     margin: 1rem 3rem 2rem 3rem;
