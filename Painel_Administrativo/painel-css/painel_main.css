@@ -127,3 +127,46 @@
     background-color: #027581;
     color: white;
   }
+
+  /*Produtos*/
+#produtos{
+    min-height: 90vh;
+}
+#produtos div{
+    overflow-x: auto;
+}
+@media screen and (max-width:610px) {
+    #produtos div{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+    }
+}
+#produtos h2{
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+#produtos table {
+    border-collapse: collapse;
+    width: 91%;
+    margin: auto ;
+  }
+  
+#produtos th, td {
+    text-align: left;
+    padding: 8px;
+  }
+#produtos td > img{
+    max-width: 3rem;
+  }
+.produto-imagem
+{
+    max-width: 50%;
+}
+  
+#produtos tr:nth-child(even){background-color: #f2f2f2}
+  
+#produtos th {
+    background-color: #027581;
+    color: white;
+  }
