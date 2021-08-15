@@ -96,9 +96,29 @@
 #utilizadores{
     min-height: 90vh;
 }
+#utilizadores div{
+    width: 90%;
+    margin: auto;
+    overflow-x: auto;
+}
 #utilizadores h2{
-    margin: 1rem 3rem;
+    margin: 1rem 3rem 2rem 3rem;
 }
-#utilizadores table{
-    width: 100%;
-}
+
+#utilizadores table {
+    border-collapse: collapse;
+    width: 91%;
+    margin: auto ;
+  }
+  
+#utilizadores th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+#utilizadores tr:nth-child(even){background-color: #f2f2f2}
+  
+#utilizadores th {
+    background-color: #027581;
+    color: white;
+  }
