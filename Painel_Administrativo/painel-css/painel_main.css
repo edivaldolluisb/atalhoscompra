@@ -38,6 +38,9 @@
 
 #inicio{
     margin-top: 1rem;
+    padding-top: 1rem;
+    background-color: #f1f5f9;
+    min-height: 90vh;
 }
 #inicio h2, .dash-cards{
     margin: auto 3rem;
@@ -45,16 +48,57 @@
 #inicio h2{
     margin-bottom: 1rem;
 }
+.dash-cards{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     
+}
 .dash-card-information{
     display: flex;
     flex-flow: row wrap;
     width: 10rem;
+    height: 8rem;
+    padding: 1rem;
+    background-color: #ffffff;
+
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
 }
-.dash-card-information .ti-briefcase{
-    width: 40%;
+.dash-card-information a{
+    margin: auto;
+    background-color: rgb(236, 239, 243);
+    text-decoration: none;
+    padding: 0.2rem;
+    cursor: pointer;
+    color: #027581;
+}
+.dash-card-information .ti-briefcase, .ti-reload, .ti-check-box{
+    display: flex;
+    width: 20%;
     float: left;
+    align-items: center;
+    justify-content: center;
 }
 .dash-card-information div{
-    width: 40%;
+    width: 80%;
     float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Utilizadores*/
+#utilizadores{
+    min-height: 90vh;
+}
+#utilizadores h2{
+    margin: 1rem 3rem;
+}
+#utilizadores table{
+    width: 100%;
 }
