@@ -115,6 +115,10 @@
     width: 91%;
     margin: auto ;
   }
+  #utilizadores th {
+    background-color: #027581;
+    color: white;
+  }
   
 #utilizadores th, td {
     text-align: left;
@@ -123,10 +127,6 @@
   
 #utilizadores tr:nth-child(even){background-color: #f2f2f2}
   
-#utilizadores th {
-    background-color: #027581;
-    color: white;
-  }
 
   /*Produtos*/
 #produtos{
@@ -151,6 +151,10 @@
     width: 91%;
     margin: auto ;
   }
+  #produtos th {
+    background-color: #027581;
+    color: white;
+  }
   
 #produtos th, td {
     text-align: left;
@@ -159,14 +163,6 @@
 #produtos td > img{
     max-width: 3rem;
   }
-.produto-imagem
-{
-    max-width: 50%;
-}
   
 #produtos tr:nth-child(even){background-color: #f2f2f2}
   
-#produtos th {
-    background-color: #027581;
-    color: white;
-  }
