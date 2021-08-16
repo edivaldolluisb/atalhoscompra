@@ -36,6 +36,29 @@
 .head_outros{
     width: 30%;
 }
+/*____ Menu ____*/
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #02748171;
+}
+.menu-content{
+    width: 40%;
+    height: 100%;
+    color: #ffffff;
+    background-color: #027581;
+}
+.menu-content div{
+    margin: 1rem ;
+}
+.menu-content div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 /* Inincio*/
 
