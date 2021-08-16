@@ -22,6 +22,9 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.ti-menu-alt{
+    cursor: pointer;
+}
 .head_pesquisa{
     width: 70%;
 }
