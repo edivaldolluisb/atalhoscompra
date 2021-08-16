@@ -38,6 +38,7 @@
 }
 /*____ Menu ____*/
 .menu{
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -45,6 +46,9 @@
     background-color: #02748171;
 }
 .menu-content{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 40%;
     height: 100%;
     color: #ffffff;
@@ -52,6 +56,16 @@
 }
 .menu-content div{
     margin: 1rem ;
+}
+.menu-content ul{
+    margin-left: 2rem;
+    list-style: none;
+}
+.menu-content li{
+    margin: 1.5rem auto;
+    cursor: pointer;
+    font-size: 1.2em;
+
 }
 .menu-content div{
     display: flex;
