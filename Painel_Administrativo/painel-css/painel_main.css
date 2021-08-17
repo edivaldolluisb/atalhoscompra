@@ -209,7 +209,7 @@
 /*Categorias*/
 
 #categorias{
-    min-height: 90vh;
+    min-height: 60vh;
 }
 
 #categorias h2{
@@ -261,3 +261,73 @@
     background-color: #027581;
 }
   
+/*Pedidos*/
+#pedidos{
+    min-height: 90vh;
+    margin: 1rem auto;
+}
+#pedidos div{
+    max-height: 70vh;
+    overflow-x: auto;
+}
+@media screen and (max-width:610px) {
+    #pedidos div{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+    }
+}
+#pedidos h2{
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+#pedidos table {
+    border-collapse: collapse;
+    width: 91%;
+    margin: auto ;
+  }
+  #pedidos th {
+    background-color: #027581;
+    color: white;
+  }
+  
+#pedidos th, td {
+    text-align: left;
+    padding: 8px;
+  }
+#pedidos td > img{
+    max-width: 3rem;
+  }
+  #pedidos td > select{
+    border: none;
+  }
+#pedidos td > a{
+    text-decoration: none;
+    color: black;
+  }
+  
+#pedidos tr:nth-child(even){background-color: #f2f2f2}
+
+#pedidos form button{
+    background-color: #027581;
+    margin: 1rem auto 1rem 2rem;
+    padding: 0.2rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#produto_cliente a{
+    text-decoration: none;
+    background-color: #027581;
+    color: #ffffff;
+    padding: 0.2em;
+    border-radius: 3px;
+}
+#produto_cliente p, .voltar_tabela_clientes{
+    margin: 1rem auto 1rem 2rem;
+    
+    
+}
+
