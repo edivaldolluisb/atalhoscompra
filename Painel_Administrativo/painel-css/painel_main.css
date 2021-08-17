@@ -205,4 +205,59 @@
   }
   
 #produtos tr:nth-child(even){background-color: #f2f2f2}
+
+/*Categorias*/
+
+#categorias{
+    min-height: 90vh;
+}
+
+#categorias h2{
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+#categorias table {
+    border-collapse: collapse;
+    width: 91%;
+    margin: auto ;
+  }
+  #categorias th {
+    background-color: #027581;
+    color: white;
+
+  }
+  
+#categorias th, td {
+    text-align: left;
+    padding: 8px;
+  }
+#categorias td span {
+    cursor: pointer;
+    background-color: #027581;
+    color: #ffffff;
+
+    padding: 0.2rem;
+    border-radius: 3px;
+    border: none;
+  }
+  
+#categorias tr:nth-child(even){background-color: #f2f2f2}
+  
+#categorias form{
+    margin: 5rem 3rem auto 3rem;
+}
+
+#categorias form button[type="submit"], input{
+    padding: 0.2rem;
+    color: #000000;
+}
+#categorias form button[type="submit"]{
+    border: none;
+    cursor: pointer;
+}
+#categorias form input[type="text"]{
+    color: #ffffff;
+    border: none;
+    background-color: #027581;
+}
   
