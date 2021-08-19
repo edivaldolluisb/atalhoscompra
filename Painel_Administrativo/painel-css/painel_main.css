@@ -54,6 +54,16 @@
     color: #ffffff;
     background-color: #027581;
 }
+@media screen and (max-width:875px) {
+    .menu-content{
+        width: 45%;
+    }
+    .menu-content h1{
+        font-size: 2rem;
+    }
+
+}
+
 .menu-content div{
     margin: 1rem ;
 }
@@ -65,7 +75,19 @@
     margin: 1.5rem auto;
     cursor: pointer;
     font-size: 1.2em;
-
+}
+@media screen and (max-width:875px) {
+    .menu-content li{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:480px) {
+    .menu-content{
+        width: 100%;
+    }
+    .menu-content h1{
+        font-size: 1.5rem;
+    }
 }
 .menu-content div{
     display: flex;
