@@ -17,6 +17,7 @@ var menu = window.document.querySelector('.menu')
 
 menu_inicio.addEventListener('click', ()=>{
     menu.style.display = 'none'
+    inicio.style.display = 'block'
 
     utilizadores.style.display = 'none'
     produtos.style.display = 'none'
