@@ -134,6 +134,7 @@
 }
 /*Utilizadores*/
 #utilizadores{
+    display: none;
     min-height: 90vh;
 }
 #utilizadores div{
@@ -170,6 +171,7 @@
 
   /*Produtos*/
 #produtos{
+    display: none;
     min-height: 90vh;
 }
 #produtos div{
@@ -209,6 +211,7 @@
 /*Categorias*/
 
 #categorias{
+    display: none;
     min-height: 60vh;
 }
 
@@ -231,7 +234,7 @@
     text-align: left;
     padding: 8px;
   }
-#categorias td span {
+#categorias td button {
     cursor: pointer;
     background-color: #027581;
     color: #ffffff;
@@ -239,6 +242,10 @@
     padding: 0.2rem;
     border-radius: 3px;
     border: none;
+  }
+#categorias td button:hover {
+    background-color: #07a0b1;
+    color: #ffffff;
   }
   
 #categorias tr:nth-child(even){background-color: #f2f2f2}
@@ -263,6 +270,7 @@
   
 /*Pedidos*/
 #pedidos{
+    display: none;
     min-height: 90vh;
     margin: 1rem auto;
 }
@@ -330,4 +338,53 @@
     
     
 }
+
+/* Contactos */
+#contactos{
+    display: none;
+    min-height: 90vh;
+}
+#contactos div{
+    overflow-x: auto;
+}
+@media screen and (max-width:610px) {
+    #contactos div{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+    }
+}
+#contactos h2{
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+#contactos table {
+    border-collapse: collapse;
+    width: 91%;
+    margin: auto ;
+  }
+  #contactos th {
+    background-color: #027581;
+    color: white;
+  }
+  
+#contactos th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  #contactos tr button {
+    padding: 0.2rem;
+    background-color: #048a99;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #contactos tr button:hover {
+    background-color: #07a4b6;
+    color: #ffffff;
+    
+  }
+  
+#contactos tr:nth-child(even){background-color: #f2f2f2}
 

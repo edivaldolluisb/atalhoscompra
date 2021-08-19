@@ -44,28 +44,28 @@ themify-icons.css">
                 <span class="ti-menu-alt fechar_menu"></span>
             </div>
             <ul>
-                <li>
-                    <span class="ti-home"></span> Inicio
+                <li class="menu-inicio">
+                    <span class="ti-home "></span> Inicio
                 </li>
-                <li>
+                <li class="menu-user">
                     <span class="ti-face-smile"></span> Utilizadores
                 </li>
-                <li>
+                <li class="menu-produtos">
                     <span class="ti-clipboard"></span> Produtos
                 </li>
-                <li>
-                    <span class="ti-folder"></span> Categorias
+                <li class="menu-categorias">
+                    <span class="ti-folder "></span> Categorias
                 </li>
-                <li>
+                <li class=" menu-pedidos">
                     <span class="ti-time"></span> Pedidos
                 </li>
-                <li>
-                    <span class="ti-book"></span> Contactos
+                <li class="menu-contatos">
+                    <span class="ti-book "></span> Contactos
                 </li>
-                <li>
+                <li >
                     <span class="ti-settings"></span> Settings
                 </li>
-                <li>
+                <li >
                     <span class="ti-settings"></span> Log out
                 </li>
             </ul>
@@ -103,6 +103,7 @@ themify-icons.css">
             </div>
         </div>
     </section>
+    <!--Sessão utilizadores-->
     <section id="utilizadores">
         <h2>Utilizadores</h2>
 
@@ -151,6 +152,7 @@ themify-icons.css">
             </table>
         </div>
     </section>
+    <!--Sessão produtos-->
     <section id="produtos">
         <h2>Produtos </h2>
 
@@ -172,53 +174,54 @@ themify-icons.css">
                         <td>Óleo de coco</td>
                         <td>24.13</td>
                         <td>200</td>
-                        <td>Loja 1</td>
+                        <td>KuaKula</td>
                     </tr>
                     <tr>
                         <td class="produto-imagem"><img src="../imagens/cosmetic-bottle.png" alt="nome do produto"></td>
                         <td>Óleo de coco</td>
                         <td>24.13</td>
                         <td>153</td>
-                        <td>Loja 1</td>
+                        <td>Ricarte_st</td>
                     </tr>
                     <tr>
                         <td class="produto-imagem"><img src="../imagens/cosmetic-bottle.png" alt="nome do produto"></td>
                         <td>Óleo de coco</td>
                         <td>24.13</td>
-                        <td>26i</td>
-                        <td>Loja 1</td>
+                        <td>26</td>
+                        <td>Zaza</td>
                     </tr>
                     <tr>
                         <td class="produto-imagem"><img src="../imagens/cosmetic-bottle.png" alt="nome do produto"></td>
                         <td>Óleo de coco</td>
                         <td>24.13</td>
                         <td>413</td>
-                        <td>Loja 1</td>
+                        <td>KuaKula</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
+    <!--Sessão de Categorias-->
     <section id="categorias">
         <h2>Categorias</h2>
         <table>
             <thead>
-                <tr rowspan="2">
+                <tr>
                     <th>Categoria</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Acessórios</td>
-                    <td><span>Atualizar</span></td>
+                    <td><button type="button">Atualizar</button></td>
                 </tr>
                 <tr>
                     <td>Cosméticos</td>
-                    <td><span>Atualizar</span></td>
+                    <td><button type="button">Atualizar</button></td>
                 </tr>
                 <tr>
                     <td>Artesanatos</td>
-                    <td><span>Atualizar</span></td>
+                    <td><button type="button">Atualizar</button></td>
                 </tr>
             </tbody>
         </table>
@@ -230,6 +233,7 @@ themify-icons.css">
         </form>
 
     </section>
+    <!--Sessão de pedidos-->
     <section id="pedidos">
         <h2>Pedidos</h2>
         <form action="" method="post">
@@ -351,9 +355,49 @@ themify-icons.css">
         </div>
 
     </section>
+    <!--Secção de Contactos-->
+    <section id="contactos">
+
+        <h2>Contatos</h2>
+
+        <!--Tabela de Contactos-->
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Apelido</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jorge</td>
+                        <td>Medeiros</td>
+                        <td>9900009</td>
+                        <td>Jorgemedeiros@gmail.com</td>
+                        <td><button type="button">Bloquear</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>Patricia</td>
+                        <td>9900092</td>
+                        <td>Anapatricia@gmail.com</td>
+                        <td><button type="button">Bloquear</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    </section>
 
     <!--arquivos js-->
     <script src="./painel-js/menu.js"></script>
+    <script src="./painel-js/main.js"></script>
 
 </body>
 
