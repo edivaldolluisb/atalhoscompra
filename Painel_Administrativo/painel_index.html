@@ -62,10 +62,10 @@ themify-icons.css">
                 <li class="menu-contatos">
                     <span class="ti-book "></span> Contactos
                 </li>
-                <li >
+                <li>
                     <span class="ti-settings"></span> Settings
                 </li>
-                <li >
+                <li>
                     <span class="ti-settings"></span> Log out
                 </li>
             </ul>
@@ -183,11 +183,35 @@ themify-icons.css">
             </table>
         </div>
         <div id="adicionar_produto">
-            <div class="adicionar-produto">
-                <h3>Adicionar</h3>
-                <div><input type="file"></div>
-                
-            </div>
+            <div><i class="ti-close"></i></div>
+                <h3>Adicionar Produto</h3>
+                <form action="" method="post">
+                    <div>
+                        <label for="addimage">Imagem</label>
+                        <input type="file" id="addimage" accept="image/*">
+                        <label for="addimage" class="ti-upload"></label>
+                    </div>
+                    <div>
+                        <label for="add_produto-nome">Nome do Produto</label>
+                        <input type="text" id="add_produto-nome">
+                        <label for="add_produto-preco">Preço</label>
+                        <input type="number" id="add_produto-preco">
+                        <label for="add_produto-stock">Stock</label>
+                        <input type="number" id="add_produto-stock">
+                        <label for="add_produto-fornecedor">Fornecedor</label>
+                        <select id="add_produto-fornecedor">
+                            <option value="RicArte">RicArte</option>
+                            <option value="Kwakula-stp">Kwakula-stp</option>
+                            <option value="Zaza-Coconut">Zaza-Coconut</option>
+                        </select>
+                        <label for="add_produto-descrição">Descição do Produto</label>
+                        <textarea id="w3review" name="w3review" rows="4" cols="20">Descrição do Produto
+                            
+                            </textarea>
+                    </div>
+                    <button type="submit">Adicionar Produto</button>
+                </form>
+
         </div>
 
 
@@ -255,7 +279,7 @@ themify-icons.css">
                                 </select></td>
                         </tr>
                         <tr>
-                            <td class="nome_cliente"><a href="#produto_cliente" id="JoanaGraça" >Joana da Graça</a></td>
+                            <td class="nome_cliente"><a href="#produto_cliente" id="JoanaGraça">Joana da Graça</a></td>
                             <td>20/12/2021</td>
                             <td>21/12/2021</td>
                             <td>3</td>

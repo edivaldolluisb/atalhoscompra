@@ -254,9 +254,56 @@ input[type="file"]{
     bottom: 3rem;
     right: 1rem;
     width: 30%;
-    height: 40%;
-    background-color: #05b2c5;
+    height: 50%;
+    background-color: #05b2c5b6;
+    border-radius: 3px;
 }
+#adicionar_produto{
+    padding: 1rem;
+}
+#adicionar_produto form input[type="file"]{
+    display: none;
+}
+#adicionar_produto form div{
+    display: flex;
+    flex-flow: column wrap;
+}
+#adicionar_produto div input{
+    border: none;
+    border-bottom: solid ;
+    border-radius: 3px;
+    color: #ffffff;
+}
+#adicionar_produto div textarea{
+    border: none;
+    border-radius: 3px;
+    text-align: justify;
+    margin-top: 0.3rem;
+}
+
+#adicionar_produto form button[type="submit"]{
+    border: none;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    background-color: #ffffff;
+    color: #027581;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#adicionar_produto div select{
+    background-color: #048a99;
+    color: #000000;
+
+    
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+#adicionar_produto .ti-close{
+    float: right;
+    cursor: pointer;
+}
+
 
 
 /*Categorias*/
