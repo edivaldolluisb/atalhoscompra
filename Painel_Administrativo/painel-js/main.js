@@ -79,3 +79,14 @@ menu_contactos.addEventListener('click', ()=>{
 
 
 /*página de produtos*/
+var produto_registar = window.document.querySelector('.botao_produto');
+
+var adicionar_produto = window.document.querySelector('#adicionar_produto')
+var fechar_add_produto = window.document.querySelector('.fechar_add_produto')
+
+produto_registar.addEventListener('click', ()=>{
+    adicionar_produto.display = 'block'
+})
+fechar_add_produto.addEventListener('click', ()=>{
+    adicionar_produto.display = 'none'
+})
