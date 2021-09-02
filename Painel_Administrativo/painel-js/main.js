@@ -79,14 +79,24 @@ menu_contactos.addEventListener('click', ()=>{
 
 
 /*página de produtos*/
-var produto_registar = window.document.querySelector('.botao_produto');
-
+var produto_registar = window.document.querySelector('#Adicionar_produto_registar')
 var adicionar_produto = window.document.querySelector('#adicionar_produto')
+var atualizar_produto = window.document.querySelector('#editar_produto')
 var fechar_add_produto = window.document.querySelector('.fechar_add_produto')
+var fechar_atualizar_produto = window.document.querySelector('.fechar_atualizar_produto')
+var button_Editar_produto = window.document.querySelector('.button_Editar_produto')
 
 produto_registar.addEventListener('click', ()=>{
-    adicionar_produto.display = 'block'
+    adicionar_produto.style.display = 'block'
 })
+
 fechar_add_produto.addEventListener('click', ()=>{
-    adicionar_produto.display = 'none'
+    adicionar_produto.style.display = 'none'
+})
+
+fechar_atualizar_produto.addEventListener('click', ()=>{
+    atualizar_produto.style.display = 'none'
+})
+button_Editar_produto.addEventListener('click', ()=>{
+    atualizar_produto.style.display = 'block'
 })

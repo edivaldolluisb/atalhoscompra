@@ -189,6 +189,17 @@
   }
   
 #utilizadores tr:nth-child(even){background-color: #f2f2f2}
+
+.acoes_utilizadores{
+    display: flex;
+    justify-content: space-between;
+}
+.acoes_utilizadores i{
+    cursor: pointer;
+}
+.acoes_utilizadores .ti-trash {
+    color: red;
+}
   
 
   /*Produtos*/
@@ -275,6 +286,14 @@ input[type="file"]{
 #adicionar_produto form input[type="file"]{
     display: none;
 }
+.acoes_produtos{
+    font-display: flex;
+    justify-content: space-between;
+}
+.acoes_produtos i{
+    cursor: pointer;
+    color: red;
+}
 #adicionar_produto form div{
     display: flex;
     flex-flow: column wrap;
@@ -319,6 +338,64 @@ input[type="file"]{
     cursor: pointer;
 }
 
+/*EDITAR PRODUTO*/
+#editar_produto{
+    display: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    width: 30%;
+    height: 50%;
+    background-color: #05b2c5b6;
+    border-radius: 3px;
+    padding: 1rem;
+}
+#editar_produto input[type="file"]{
+    display: none;
+}
+#editar_produto h3{
+    text-align: center;
+}
+
+#editar_produto form {
+    display: flex;
+    flex-flow: column wrap;
+}
+#editar_produto input{
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+#atualizar_produto-fornecedor{
+    margin-bottom: 1rem;
+}
+
+#editar_produto textarea{
+    border: none;
+    border-radius: 3px;
+    text-align: justify;
+    margin-top: 0.3rem;
+}
+
+#editar_produto form button[type="submit"]{
+    border: none;
+    margin-top: 1rem;
+    padding: 0.2rem;
+    background-color: #ffffff;
+    color: #027581;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#editar_produto select{
+    background-color: #048a99;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.fechar_atualizar_produto{
+    cursor: pointer;
+}
 
 
 /*Categorias*/

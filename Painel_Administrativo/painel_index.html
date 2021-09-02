@@ -106,6 +106,11 @@ themify-icons.css">
     <!--Sessão utilizadores-->
     <section id="utilizadores">
         <h2>Utilizadores</h2>
+        <div class="div_botoes">
+            <button type="button" class="botao_produto" id="Adicionar_utilizador_registar">Adicionar Utilizador
+
+            </button>
+        </div>
 
         <!--Tabela de utilizadores-->
         <div>
@@ -117,6 +122,7 @@ themify-icons.css">
                         <th>Distrito</th>
                         <th>Morada</th>
                         <th>Email</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -126,28 +132,12 @@ themify-icons.css">
                         <td>Água-Grande</td>
                         <td>Rua da Caixa</td>
                         <td>Jorgemedeiros@gmail.com</td>
+                        <td class="acoes_utilizadores">
+                            <i class="ti-trash"></i>
+                            <i class="ti-pencil-alt"></i>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>Ana Rita</td>
-                        <td>9900091</td>
-                        <td>Água-Grande</td>
-                        <td>Vila Maria</td>
-                        <td>Anarita@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Marlene da Costa</td>
-                        <td>9900092</td>
-                        <td>Trindade</td>
-                        <td>Mé-Zochi</td>
-                        <td>Marlenecosta@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Ana Sousa</td>
-                        <td>9900093</td>
-                        <td>Água-Grande</td>
-                        <td>Sto.António</td>
-                        <td>Anasousa@gmail.com</td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
@@ -179,42 +169,68 @@ themify-icons.css">
                         <td>24.13</td>
                         <td>200</td>
                         <td>KuaKula</td>
-                        <td><button type="button">Editar</button></td>
+                        <td class="acoes_produtos">
+                            <i class="ti-trash"></i>
+                            <button type="button" class="button_Editar_produto">Editar</button>
+                        </td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
         <div id="adicionar_produto">
             <div><i class="ti-close fechar_add_produto"></i></div>
-                <h3>Adicionar Produto</h3>
-                <form action="" method="post">
-                    <div>
-                        <label for="addimage">Imagem</label>
-                        <input type="file" id="addimage" accept="image/*">
-                        <label for="addimage" class="ti-upload"></label>
-                    </div>
-                    <div>
-                        <label for="add_produto-nome">Nome do Produto</label>
-                        <input type="text" id="add_produto-nome">
-                        <label for="add_produto-preco">Preço</label>
-                        <input type="number" id="add_produto-preco">
-                        <label for="add_produto-stock">Stock</label>
-                        <input type="number" id="add_produto-stock">
-                        <label for="add_produto-fornecedor">Fornecedor</label>
-                        <select id="add_produto-fornecedor">
-                            <option value="RicArte">RicArte</option>
-                            <option value="Kwakula-stp">Kwakula-stp</option>
-                            <option value="Zaza-Coconut">Zaza-Coconut</option>
-                        </select>
-                        <label for="add_produto-descrição">Descição do Produto</label>
-                        <textarea id="w3review" name="w3review" rows="4" cols="20">Descrição do Produto
+            <h3>Adicionar Produto</h3>
+            <form action="" method="post">
+                <div>
+                    <label for="addimage">Imagem</label>
+                    <input type="file" id="addimage" accept="image/*">
+                    <label for="addimage" class="ti-upload"></label>
+                </div>
+                <div>
+                    <label for="add_produto-nome">Nome do Produto</label>
+                    <input type="text" id="add_produto-nome">
+                    <label for="add_produto-preco">Preço</label>
+                    <input type="number" id="add_produto-preco">
+                    <label for="add_produto-stock">Stock</label>
+                    <input type="number" id="add_produto-stock">
+                    <label for="add_produto-fornecedor">Fornecedor</label>
+                    <select id="add_produto-fornecedor">
+                        <option value="RicArte">RicArte</option>
+                        <option value="Kwakula-stp">Kwakula-stp</option>
+                        <option value="Zaza-Coconut">Zaza-Coconut</option>
+                    </select>
+                    <label for="add_produto-descrição">Descição do Produto</label>
+                    <textarea id="add_produto-descrição" rows="4" cols="20">Descrição do Produto
                             
                             </textarea>
-                    </div>
-                    <button type="submit">Adicionar Produto</button>
-                </form>
+                </div>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </div>
+        <div id="editar_produto">
+            <div><i class="ti-close fechar_atualizar_produto"></i></div>
+            <h3>Editar Produto</h3>
+            <form action="">
+                <label for="atualizar_foto_produto">Alterar imagem</label>
+                <input type="file" accept="image/*" id="atualizar_foto_produto">
 
+
+                <input type="text" id="atualizar_produto-nome" placeholder="Nome do Produto">
+                <input type="number" id="atualizar_produto-preco" placeholder="Preço do Produto">
+                <input type="number" id="atualizar_produto-stock" placeholder="Stock do Produto">
+                
+                <label for="atualizar_produto-fornecedor">Fornecedor</label>
+                <select id="atualizar_produto-fornecedor">
+                    <option value="RicArte">RicArte</option>
+                    <option value="Kwakula-stp">Kwakula-stp</option>
+                    <option value="Zaza-Coconut">Zaza-Coconut</option>
+                </select>
+
+                <textarea id="atualizar_descricao_produto" rows="4" cols="20">Descrição do Produto
+                        
+                        </textarea>
+                <button type="submit">Atualizar Produto</button>
+            </form>
         </div>
 
 
