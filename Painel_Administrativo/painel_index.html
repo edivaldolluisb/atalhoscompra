@@ -134,12 +134,66 @@ themify-icons.css">
                         <td>Jorgemedeiros@gmail.com</td>
                         <td class="acoes_utilizadores">
                             <i class="ti-trash"></i>
-                            <i class="ti-pencil-alt"></i>
+                            <i class="ti-pencil-alt atualizar_user"></i>
                         </td>
                     </tr>
 
                 </tbody>
             </table>
+        </div>
+        <div id="adicionar_utilizador">
+            <div><i class="ti-close fechar_add_utilizador"></i></div>
+            <h3>Adicionar Utilizador</h3>
+            <form action="" method="post">
+                <div>
+                    <label for="add_utilizador-nome">Nome do utilizador</label>
+                    <input type="text" id="add_utilizador-nome">
+                    <label for="add_utilizador-apelido">Apelido</label>
+                    <input type="text" id="add_utilizador-apelido">
+                    <label for="add_utilizador-telefone">Telefone</label>
+                    <input type="tel" id="add_utilizador-telefone">
+                    <select name="Seu_Distrito" id="utilizador_distrito">
+                        <option value="Água-Grande">Água-Grande</option>
+                        <option value="Lembá">Lembá</option>
+                        <option value="Lobata">Lobata</option>
+                        <option value="Caué">Caué</option>
+                        <option value="Mé-Zochi">Mé-Zochi</option>
+                        <option value="Cantagalo">Cantagalo</option>
+                    </select>
+                    <label for="add_produto-fornecedor">Morada</label>
+                    <input type="text" id="add_utilizador-morada">
+                    <label for="add_utilizador-email">E-mail</label>
+                    <input type="email" id="add_utilizador-email">
+
+                </div>
+                <button type="submit">Adicionar Utilizador</button>
+            </form>
+        </div>
+        <div id="editar_utilizador">
+            <div><i class="ti-close fechar_atualizar_utilizador"></i></div>
+            <h3>Editar Utilizador</h3>
+            <form action="" method="post">
+                <label for="atualizar_utilizador-nome">Nome do utilizador</label>
+                <input type="text" id="atualizar_utilizador-nome">
+                <label for="atualizar_utilizador-apelido">Apelido</label>
+                <input type="text" id="atualizar_utilizador-apelido">
+                <label for="add_utilizador-telefone">Telefone</label>
+                <input type="tel" id="atualizar_utilizador-telefone">
+                <select name="Seu_Distrito" id="atualizar_utilizador_distrito">
+                    <option value="Água-Grande">Água-Grande</option>
+                    <option value="Lembá">Lembá</option>
+                    <option value="Lobata">Lobata</option>
+                    <option value="Caué">Caué</option>
+                    <option value="Mé-Zochi">Mé-Zochi</option>
+                    <option value="Cantagalo">Cantagalo</option>
+                </select>
+                <label for="atualizar_produto-fornecedor">Morada</label>
+                <input type="text" id="atualizar_utilizador-morada">
+                <label for="atualizar_utilizador-email">E-mail</label>
+                <input type="email" id="atualizar_utilizador-email">
+
+                <button type="submit">Atualizar Utilizador</button>
+            </form>
         </div>
     </section>
     <!--Sessão produtos-->
@@ -218,7 +272,7 @@ themify-icons.css">
                 <input type="text" id="atualizar_produto-nome" placeholder="Nome do Produto">
                 <input type="number" id="atualizar_produto-preco" placeholder="Preço do Produto">
                 <input type="number" id="atualizar_produto-stock" placeholder="Stock do Produto">
-                
+
                 <label for="atualizar_produto-fornecedor">Fornecedor</label>
                 <select id="atualizar_produto-fornecedor">
                     <option value="RicArte">RicArte</option>
@@ -237,6 +291,9 @@ themify-icons.css">
     </section>
     <!--Sessão de Categorias-->
     <section id="categorias">
+        <div class="div_botoes">
+            <button type="button" class="botao_produto" id="Adicionar_nova_categoria">Adicionar Categoria</button>
+        </div>
         <h2>Categorias</h2>
         <table>
             <thead>
@@ -247,24 +304,31 @@ themify-icons.css">
             <tbody>
                 <tr>
                     <td>Acessórios</td>
-                    <td><button type="button">Atualizar</button></td>
+                    <td><button type="button" class="editar_CAtegoria">Atualizar</button></td>
                 </tr>
                 <tr>
                     <td>Cosméticos</td>
-                    <td><button type="button">Atualizar</button></td>
+                    <td><button type="button" class="editar_CAtegoria">Atualizar</button></td>
                 </tr>
                 <tr>
                     <td>Artesanatos</td>
-                    <td><button type="button">Atualizar</button></td>
+                    <td><button type="button" class="editar_CAtegoria">Atualizar</button></td>
                 </tr>
             </tbody>
         </table>
 
-        <form action="#" method="post">
+        <form action="#" method="post" class="nova_Categoria">
             <legend>Registar Categoria</legend>
             <input type="text" name="categoria" id="registar_categoria">
             <button type="submit">Registar</button>
         </form>
+        <div>
+            <form action="" method="post" class="atualizar_categoria_existente">
+                <legend>Editar Categoria</legend>
+                <input type="text" name="categoria" id="Editar_categoria">
+                <button type="submit" class="button_atuaizar_categoria">Actualizar</button>
+            </form>
+        </div>
 
     </section>
     <!--Sessão de pedidos-->

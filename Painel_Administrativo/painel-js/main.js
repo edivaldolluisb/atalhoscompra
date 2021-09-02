@@ -78,6 +78,32 @@ menu_contactos.addEventListener('click', ()=>{
 })
 
 
+/* Página de utilizadores*/
+var Adicionar_utilizador_registar = window.document.querySelector('#Adicionar_utilizador_registar')
+var atualizar_user = window.document.querySelector('.atualizar_user')
+var adicionar_utilizador = window.document.querySelector('#adicionar_utilizador')
+var editar_utilizador = window.document.querySelector('#editar_utilizador')
+var fechar_add_utilizador = window.document.querySelector('.fechar_add_utilizador')
+var fechar_atualizar_utilizador = window.document.querySelector('.fechar_atualizar_utilizador')
+
+Adicionar_utilizador_registar.addEventListener('click', ()=>{
+    adicionar_utilizador.style.display = 'block'
+})
+
+fechar_add_utilizador.addEventListener('click', ()=>{
+    adicionar_utilizador.style.display = 'none'
+})
+
+atualizar_user.addEventListener('click', ()=>{
+    editar_utilizador.style.display = 'block'
+})
+
+fechar_atualizar_utilizador.addEventListener('click', ()=>{
+    editar_utilizador.style.display = 'none'
+})
+
+
+
 /*página de produtos*/
 var produto_registar = window.document.querySelector('#Adicionar_produto_registar')
 var adicionar_produto = window.document.querySelector('#adicionar_produto')
@@ -99,4 +125,19 @@ fechar_atualizar_produto.addEventListener('click', ()=>{
 })
 button_Editar_produto.addEventListener('click', ()=>{
     atualizar_produto.style.display = 'block'
+})
+
+/* Adicionar Categoria */
+
+var Adicionar_nova_categoria = window.document.querySelector('#Adicionar_nova_categoria')
+var editar_CAtegoria = window.document.querySelector('.editar_CAtegoria')
+var nova_Categoria = window.document.querySelector('.nova_Categoria')
+var atualizar_categoria_existente = window.document.querySelector('.atualizar_categoria_existente')
+var button_atuaizar_categoria = window.document.querySelector('.button_atuaizar_categoria')
+
+Adicionar_nova_categoria.addEventListener('click', ()=>{
+    nova_Categoria.style.display = 'block'
+})
+editar_CAtegoria.addEventListener('click', ()=>{
+    atualizar_categoria_existente.style.display = 'block'
 })

@@ -200,6 +200,10 @@
 .acoes_utilizadores .ti-trash {
     color: red;
 }
+
+#adicionar_utilizador select{
+    margin-top: 1rem;
+}
   
 
   /*Produtos*/
@@ -265,27 +269,6 @@
     background-color: #05b2c5;
     color: #ffffff;
 }
-input[type="file"]{
-    width: 2rem;
-    height: 2rem;
-}
-
-#adicionar_produto{
-    position: fixed;
-    display: none;
-    bottom: 3rem;
-    right: 1rem;
-    width: 30%;
-    height: 50%;
-    background-color: #05b2c5b6;
-    border-radius: 3px;
-}
-#adicionar_produto{
-    padding: 1rem;
-}
-#adicionar_produto form input[type="file"]{
-    display: none;
-}
 .acoes_produtos{
     font-display: flex;
     justify-content: space-between;
@@ -294,11 +277,35 @@ input[type="file"]{
     cursor: pointer;
     color: red;
 }
-#adicionar_produto form div{
+
+
+input[type="file"]{
+    width: 2rem;
+    height: 2rem;
+}
+
+
+#adicionar_produto, #adicionar_utilizador{
+    position: fixed;
+    display: none;
+    bottom: 3rem;
+    right: 1rem;
+    width: 30%;
+    height: 50%;
+    background-color: #05b2c5b6;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+#adicionar_produto form input[type="file"]{
+    display: none;
+}
+
+#adicionar_produto form div, #adicionar_utilizador form div{
     display: flex;
     flex-flow: column wrap;
 }
-#adicionar_produto div input{
+#adicionar_produto div input, #adicionar_utilizador div input{
     border: none;
     border-bottom: solid ;
     border-radius: 3px;
@@ -315,7 +322,7 @@ input[type="file"]{
     margin-top: 0.3rem;
 }
 
-#adicionar_produto form button[type="submit"]{
+#adicionar_produto form button[type="submit"], #adicionar_utilizador form button[type="submit"]{
     border: none;
     margin-top: 1rem;
     padding: 0.2rem;
@@ -324,22 +331,20 @@ input[type="file"]{
     border-radius: 3px;
     cursor: pointer;
 }
-#adicionar_produto div select{
+#adicionar_produto div select, #adicionar_utilizador select{
     background-color: #048a99;
     color: #000000;
 
-    
     border: none;
     border-radius: 3px;
     color: #ffffff;
 }
-#adicionar_produto .ti-close{
+#adicionar_produto .ti-close, #adicionar_utilizador .ti-close{
     float: right;
     cursor: pointer;
 }
 
-/*EDITAR PRODUTO*/
-#editar_produto{
+#editar_produto, #editar_utilizador{
     display: none;
     position: fixed;
     bottom: 3rem;
@@ -357,11 +362,11 @@ input[type="file"]{
     text-align: center;
 }
 
-#editar_produto form {
+#editar_produto form, #editar_utilizador form {
     display: flex;
     flex-flow: column wrap;
 }
-#editar_produto input{
+#editar_produto input, #editar_utilizador input{
     border: none;
     margin-bottom: 1rem;
     border-radius: 3px;
@@ -377,7 +382,7 @@ input[type="file"]{
     margin-top: 0.3rem;
 }
 
-#editar_produto form button[type="submit"]{
+#editar_produto form button[type="submit"], #editar_utilizador button[type="submit"]{
     border: none;
     margin-top: 1rem;
     padding: 0.2rem;
@@ -386,14 +391,14 @@ input[type="file"]{
     border-radius: 3px;
     cursor: pointer;
 }
-#editar_produto select{
+#editar_produto select, #editar_utilizador select{
     background-color: #048a99;
     color: #000000;
     border: none;
     border-radius: 3px;
     color: #ffffff;
 }
-.fechar_atualizar_produto{
+.fechar_atualizar_produto, .fechar_atualizar_utilizador{
     cursor: pointer;
 }
 
@@ -457,6 +462,11 @@ input[type="file"]{
     border: none;
     background-color: #027581;
 }
+
+.nova_Categoria, .atualizar_categoria_existente{
+    display: none;
+}
+
   
 /*Pedidos*/
 #pedidos{
