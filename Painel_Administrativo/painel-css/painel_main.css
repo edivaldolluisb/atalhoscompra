@@ -162,13 +162,7 @@
 #utilizadores div{
     overflow-x: auto;
 }
-@media screen and (max-width:610px) {
-    #utilizadores div{
-        width: 90%;
-        margin: auto;
-        overflow-x: auto;
-    }
-}
+
 #utilizadores h2{
     margin: 1rem 3rem 2rem 3rem;
 }
@@ -547,13 +541,7 @@ input[type="file"]{
 #contactos div{
     overflow-x: auto;
 }
-@media screen and (max-width:610px) {
-    #contactos div{
-        width: 90%;
-        margin: auto;
-        overflow-x: auto;
-    }
-}
+
 #contactos h2{
     margin: 1rem 3rem 2rem 3rem;
 }
@@ -588,3 +576,17 @@ input[type="file"]{
   
 #contactos tr:nth-child(even){background-color: #f2f2f2}
 
+@media screen and (max-width:610px) {
+    #contactos div{
+        width: 90%;
+        margin: auto;
+        overflow-x: auto;
+    }
+}
+@media screen and (max-width:609px ) {
+    #adicionar_produto, #adicionar_utilizador, #editar_produto, #editar_utilizador{
+        width: 12rem;
+        height: 50%;
+        background-color: #05b2c5;
+    }
+}
