@@ -163,7 +163,7 @@
     overflow-x: auto;
 }
 
-#utilizadores h2{
+#utilizadores h2, #produtos h2, #categorias h2, #pedidos h2, #contactos h2{
     margin: 1rem 3rem 2rem 3rem;
 }
 
@@ -226,9 +226,7 @@
         overflow-x: auto;
     }
 }
-#produtos h2{
-    margin: 1rem 3rem 2rem 3rem;
-}
+
 
 #produtos table {
     border-collapse: collapse;
@@ -404,9 +402,6 @@ input[type="file"]{
     min-height: 60vh;
 }
 
-#categorias h2{
-    margin: 1rem 3rem 2rem 3rem;
-}
 
 #categorias table {
     border-collapse: collapse;
@@ -478,9 +473,6 @@ input[type="file"]{
         margin: auto;
         overflow-x: auto;
     }
-}
-#pedidos h2{
-    margin: 1rem 3rem 2rem 3rem;
 }
 
 #pedidos table {
@@ -577,7 +569,7 @@ input[type="file"]{
 #contactos tr:nth-child(even){background-color: #f2f2f2}
 
 @media screen and (max-width:610px) {
-    #contactos div{
+    #contactos div, #tabela_users{
         width: 90%;
         margin: auto;
         overflow-x: auto;
