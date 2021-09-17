@@ -1,4 +1,3 @@
-
 var menu_inicio = window.document.querySelector('.menu-inicio')
 var menu_user = window.document.querySelector('.menu-user')
 var menu_produtos = window.document.querySelector('.menu-produtos')
@@ -23,7 +22,7 @@ menu_inicio.addEventListener('click', ()=>{
     produtos.style.display = 'none'
     categorias.style.display = 'none'
     pedidos.style.display = 'none'
-    menu_contactos.style.display = 'none'
+    contactos.style.display = 'none'
     
 })
 menu_user.addEventListener('click', ()=>{
@@ -33,7 +32,7 @@ menu_user.addEventListener('click', ()=>{
     produtos.style.display = 'none'
     categorias.style.display = 'none'
     pedidos.style.display = 'none'
-    menu_contactos.style.display = 'none'
+    contactos.style.display = 'none'
     inicio.style.display = 'none'
 })
 menu_produtos.addEventListener('click', ()=>{
@@ -43,7 +42,7 @@ menu_produtos.addEventListener('click', ()=>{
     utilizadores.style.display = 'none'
     categorias.style.display = 'none'
     pedidos.style.display = 'none'
-    menu_contactos.style.display = 'none'
+    contactos.style.display = 'none'
     inicio.style.display = 'none'
 })
 menu_categorias.addEventListener('click', ()=>{
@@ -53,7 +52,7 @@ menu_categorias.addEventListener('click', ()=>{
     produtos.style.display = 'none'
     utilizadores.style.display = 'none'
     pedidos.style.display = 'none'
-    menu_contactos.style.display = 'none'
+    contactos.style.display = 'none'
     inicio.style.display = 'none'
 })
 menu_pedidos.addEventListener('click', ()=>{
@@ -63,7 +62,7 @@ menu_pedidos.addEventListener('click', ()=>{
     produtos.style.display = 'none'
     utilizadores.style.display = 'none'
     categorias.style.display = 'none'
-    menu_contactos.style.display = 'none'
+    contactos.style.display = 'none'
     inicio.style.display = 'none'
 })
 menu_contactos.addEventListener('click', ()=>{
