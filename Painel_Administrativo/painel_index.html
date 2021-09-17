@@ -129,9 +129,16 @@ themify-icons.css">
                     <tr>
                         <td>Jorge Medeiros</td>
                         <td>Jorgemedeiros@gmail.com</td>
-                        <td>Água-Grande</td>
-                        <td>Rua da Caixa</td>
-                        <td>Jorgemedeiros@gmail.com</td>
+                        <td>
+
+                            <select name="" id="">
+                                <option value="">Vendedor</option>
+
+                                <option value="">Administrador</option>
+                            </select>
+                        </td>
+                        <td>17-09-2021</td>
+
                         <td class="acoes_utilizadores">
                             <i class="ti-trash"></i>
                             <i class="ti-pencil-alt atualizar_user"></i>
@@ -150,8 +157,6 @@ themify-icons.css">
                     <input type="text" id="add_utilizador-nome">
                     <label for="add_utilizador-apelido">Apelido</label>
                     <input type="text" id="add_utilizador-apelido">
-                    <label for="add_utilizador-telefone">Telefone</label>
-                    <input type="tel" id="add_utilizador-telefone">
                     <select name="Seu_Distrito" id="utilizador_distrito">
                         <option value="Água-Grande">Água-Grande</option>
                         <option value="Lembá">Lembá</option>
@@ -253,6 +258,12 @@ themify-icons.css">
                         <option value="Kwakula-stp">Kwakula-stp</option>
                         <option value="Zaza-Coconut">Zaza-Coconut</option>
                     </select>
+                    <label for="adicionar_categoria_produto">Categoria do Produto</label>
+                    <select id="adicionar_categoria_produto">
+                        <option value="">Cosmético</option>
+                        <option value="">Acessórios</option>
+                        <option value="">Artesanatos</option>
+                    </select>
                     <label for="add_produto-descrição">Descição do Produto</label>
                     <textarea id="add_produto-descrição" rows="4" cols="20">Descrição do Produto
                             
@@ -278,6 +289,12 @@ themify-icons.css">
                     <option value="RicArte">RicArte</option>
                     <option value="Kwakula-stp">Kwakula-stp</option>
                     <option value="Zaza-Coconut">Zaza-Coconut</option>
+                </select>
+                <label for="editar_categoria_produto">Categoria do Produto</label>
+                <select id="editar_categoria_produto">
+                    <option value="">Cosmético</option>
+                    <option value="">Acessórios</option>
+                    <option value="">Artesanatos</option>
                 </select>
 
                 <textarea id="atualizar_descricao_produto" rows="4" cols="20">Descrição do Produto
