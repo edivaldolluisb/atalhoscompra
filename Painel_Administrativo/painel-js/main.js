@@ -109,7 +109,9 @@ var adicionar_produto = window.document.querySelector('#adicionar_produto')
 var atualizar_produto = window.document.querySelector('#editar_produto')
 var fechar_add_produto = window.document.querySelector('.fechar_add_produto')
 var fechar_atualizar_produto = window.document.querySelector('.fechar_atualizar_produto')
-var button_Editar_produto = window.document.querySelector('.button_Editar_produto')
+var button_Editar_produto = window.document.querySelectorAll('.button_Editar_produto')
+
+console.log(button_Editar_produto)
 
 produto_registar.addEventListener('click', ()=>{
     adicionar_produto.style.display = 'block'
@@ -122,9 +124,16 @@ fechar_add_produto.addEventListener('click', ()=>{
 fechar_atualizar_produto.addEventListener('click', ()=>{
     atualizar_produto.style.display = 'none'
 })
-button_Editar_produto.addEventListener('click', ()=>{
-    atualizar_produto.style.display = 'block'
-})
+
+for (let index = 0; index < button_Editar_produto.length; index++) {
+    const element = button_Editar_produto[index];
+    
+    element.addEventListener('click', (event)=>{
+        atualizar_produto.style.display = 'block'
+    })
+
+}
+
 
 /* Adicionar Categoria */
 
