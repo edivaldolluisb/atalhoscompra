@@ -79,7 +79,7 @@ menu_contactos.addEventListener('click', ()=>{
 
 /* Página de utilizadores*/
 var Adicionar_utilizador_registar = window.document.querySelector('#Adicionar_utilizador_registar')
-var atualizar_user = window.document.querySelector('.atualizar_user')
+var atualizar_user = window.document.querySelectorAll('.atualizar_user')
 var adicionar_utilizador = window.document.querySelector('#adicionar_utilizador')
 var editar_utilizador = window.document.querySelector('#editar_utilizador')
 var fechar_add_utilizador = window.document.querySelector('.fechar_add_utilizador')
@@ -93,13 +93,23 @@ fechar_add_utilizador.addEventListener('click', ()=>{
     adicionar_utilizador.style.display = 'none'
 })
 
-atualizar_user.addEventListener('click', ()=>{
+/*atualizar_user.addEventListener('click', ()=>{
     editar_utilizador.style.display = 'block'
-})
+})*/
+for (let index = 0; index < atualizar_user.length; index++) {
+    const element = atualizar_user[index];
+    
+    element.addEventListener('click', (event)=>{
+        editar_utilizador.style.display = 'block'
+    })
+
+}
 
 fechar_atualizar_utilizador.addEventListener('click', ()=>{
     editar_utilizador.style.display = 'none'
 })
+
+
 
 
 
@@ -138,7 +148,7 @@ for (let index = 0; index < button_Editar_produto.length; index++) {
 /* Adicionar Categoria */
 
 var Adicionar_nova_categoria = window.document.querySelector('#Adicionar_nova_categoria')
-var editar_CAtegoria = window.document.querySelector('.editar_CAtegoria')
+var editar_CAtegoria = window.document.querySelectorAll('.editar_CAtegoria')
 var nova_Categoria = window.document.querySelector('.nova_Categoria')
 var atualizar_categoria_existente = window.document.querySelector('.atualizar_categoria_existente')
 var button_atuaizar_categoria = window.document.querySelector('.button_atuaizar_categoria')
@@ -146,6 +156,15 @@ var button_atuaizar_categoria = window.document.querySelector('.button_atuaizar_
 Adicionar_nova_categoria.addEventListener('click', ()=>{
     nova_Categoria.style.display = 'block'
 })
+/*
 editar_CAtegoria.addEventListener('click', ()=>{
     atualizar_categoria_existente.style.display = 'block'
-})
+})*/
+for (let index = 0; index < editar_CAtegoria.length; index++) {
+    const element = editar_CAtegoria[index];
+    
+    element.addEventListener('click', (event)=>{
+        atualizar_categoria_existente.style.display = 'block'
+    })
+
+}
