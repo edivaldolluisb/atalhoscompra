@@ -88,6 +88,8 @@ input[type="number"]{
     border-style: none;
     background-color: rgb(149, 200, 216);
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 @media screen and (min-width:600px) {
